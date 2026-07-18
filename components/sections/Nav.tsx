@@ -25,7 +25,9 @@ export function Nav() {
             className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight text-bg"
           >
             <Mountain size={19} className="text-ember-bright" strokeWidth={2.25} />
-            Nature<span className="text-ember-bright">Fix</span>
+            <span>
+              Nature<span className="text-ember-bright">Fix</span>
+            </span>
           </Link>
           <nav className="hidden gap-8 text-sm font-medium sm:flex">
             {links.map((l) => (

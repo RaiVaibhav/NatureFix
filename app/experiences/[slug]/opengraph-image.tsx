@@ -34,7 +34,6 @@ export default async function Image({ params }: { params: Promise<{ slug: string
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 10,
             fontSize: 26,
             fontWeight: 700,
             letterSpacing: 4,

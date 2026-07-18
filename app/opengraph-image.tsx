@@ -49,7 +49,6 @@ export default async function Image() {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: 14,
             marginTop: 56,
             fontSize: 34,
             fontWeight: 700,
