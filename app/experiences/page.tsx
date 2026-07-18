@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     url: '/experiences',
   },
   twitter: {
+    card: 'summary_large_image',
     title: 'Experiences · Nature Fix',
     description,
   },
