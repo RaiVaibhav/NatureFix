@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Rethink Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces', 'Georgia', serif;
+
+  --color-bg: #FAF7F1;
+  --color-bg-raised: #EAE1CE;
+  --color-bg-deep: #DED0AF;
+  --color-ink: #283932;
+  --color-ink-soft: #47534C;
+  --color-accent: #2E4A3B;
+  --color-accent-deep: #16241D;
+  --color-accent-soft: #4C7A64;
+  --color-ember: #C4703B;
+  --color-ember-deep: #9A4B22;
+  --color-ember-bright: #EA9F4E;
+  --color-accent-black: #0E1712;
+  --color-line: #D6C8A8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* subtle paper grain — the "masala" texture pass instead of flat color fields */
+.grain {
+  position: relative;
+}
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* duotone pine wash over hotlinked/stock photography so mismatched source images
+   still read as one consistent, branded system */
+.duotone::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--color-accent-deep) 55%, transparent) 0%, transparent 55%),
+              linear-gradient(0deg, color-mix(in srgb, var(--color-accent-deep) 70%, transparent) 0%, transparent 45%);
+  mix-blend-mode: multiply;
+}
+.duotone-light::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, color-mix(in srgb, var(--color-accent-deep) 60%, transparent) 100%);
+}
+
+::selection {
+  background: var(--color-ember-bright);
+  color: var(--color-accent-deep);
+}
+
+/* ---------- bold pass: gradients, contrast bands, topographic texture ---------- */
+
+.gradient-pine {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-black) 100%);
+}
+.gradient-dusk {
+  background: linear-gradient(175deg, var(--color-accent-deep) 0%, var(--color-accent-black) 100%);
+}
+.gradient-ember {
+  background: linear-gradient(135deg, var(--color-ember-bright) 0%, var(--color-ember-deep) 100%);
+}
+
+/* topographic contour-line texture — a real illustrative motif, not abstract noise.
+   reserved for dark/gradient sections only (gradient-dusk, gradient-pine). */
+.topo {
+  position: relative;
+  isolation: isolate;
+}
+.topo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cg fill='none' stroke='%23E2954F' stroke-width='1'%3E%3Cpath d='M0,15 Q25,5 50,15 T100,15'/%3E%3Cpath d='M0,40 Q25,32 50,40 T100,40'/%3E%3Cpath d='M0,65 Q25,55 50,65 T100,65'/%3E%3Cpath d='M0,88 Q25,80 50,88 T100,88'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 220px 220px;
+}
+.topo > * {
+  position: relative;
+  z-index: 1;
+}
+/* shifts the contour pattern up so a line sits near the top edge instead of mid-band —
+   for short bars (like the nav) where the default centered tiling reads too low */
+.topo-top::before {
+  background-position: center -18px;
+}
