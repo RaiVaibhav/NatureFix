@@ -6,7 +6,7 @@ import { images } from '@/lib/images'
 
 const tiles = [
   { title: 'Film nights', copy: 'Mountain cinema, chai on tap.', icon: Film },
-  { title: 'Sunset Hangar', copy: 'Where the valley lands and lingers.', icon: Sunset },
+  { title: 'Landing Zone Sunsets', copy: 'Chai in hand, watching the last wings come down for the day.', icon: Sunset },
   { title: 'Trail days', copy: 'Leave the mountains better.', icon: Footprints },
   { title: 'Coffee mornings', copy: 'Slow tables, new friends.', icon: Coffee },
 ]

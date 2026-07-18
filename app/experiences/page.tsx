@@ -10,9 +10,21 @@ import { PhotoFrame } from '@/components/PhotoFrame'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
 import { experiences } from '@/lib/experiences'
 
+const description = 'Four weekends, one promise each — mountain weekends starting in Bir, Himachal Pradesh.'
+
 export const metadata: Metadata = {
   title: 'Experiences',
-  description: 'Four weekends, one promise each — mountain weekends starting in Bir, Himachal Pradesh.',
+  description,
+  alternates: { canonical: '/experiences' },
+  openGraph: {
+    title: 'Experiences · Nature Fix',
+    description,
+    url: '/experiences',
+  },
+  twitter: {
+    title: 'Experiences · Nature Fix',
+    description,
+  },
 }
 
 export default function ExperiencesIndex() {

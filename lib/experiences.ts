@@ -85,7 +85,7 @@ export const experiences: Experience[] = [
         day: 'Saturday',
         location: 'Bir → Billing (~2,430 m) on foot → Bir by air',
         summary:
-          "We leave in the morning and walk the upper Billing trail through oak and rhododendron — an old shepherd route, paced kindly, every step up is height you'll spend in the air. We reach the launch by early afternoon, eat, and that's when things start: ground school first — wind cycles, thermals, why the birds circle where they circle. Then THE LONG FLIGHT — up to an hour with a certified tandem pilot, **climbing like birds**, riding ridge lift along the Dhauladhar's shoulder. A quiet sunset, then the flight debrief around the fire.",
+          "We leave in the morning and walk the upper Billing trail through oak and rhododendron — an old shepherd route, paced kindly, every step up is height you'll spend in the air. We reach the launch by early afternoon, eat, and that's when things start: ground school first — wind cycles, thermals, why the birds circle where they circle. Then UNDERSTANDING THE SKY — up to an hour with a certified tandem pilot, **climbing like birds**, riding ridge lift along the Dhauladhar's shoulder. A quiet sunset, then the flight debrief around the fire.",
         image: images.dhauladhar,
         imageAlt: 'The Dhauladhar range above the Billing launch',
       },
@@ -103,7 +103,7 @@ export const experiences: Experience[] = [
       { title: 'The sunset of landings — reading the sky as a language, not scenery', icon: 'sunset' },
       { title: 'The upper Billing trail — an old shepherd route, every step height you’ll fly', icon: 'hike' },
       { title: 'Ground school at the launch — why the birds circle where they circle', icon: 'birds' },
-      { title: 'THE LONG FLIGHT — up to an hour, climbing like birds on real thermals', icon: 'wind' },
+      { title: 'UNDERSTANDING THE SKY — up to an hour, climbing like birds on real thermals', icon: 'wind' },
       { title: 'The Saturday-night flight debrief around the fire', icon: 'fire' },
       { title: 'A hidden waterfall the morning after — cold water, quiet head', icon: 'waterfall' },
     ],
@@ -112,7 +112,7 @@ export const experiences: Experience[] = [
       'Transport to the trailhead and back',
       'Every meal, Friday dinner to Sunday goodbye tea',
       'The kit session, ground school, and flight debrief, hosted by Ishani and a local pilot',
-      'The long flight itself — no extra charge from us, weather and pilots permitting',
+      'The flight itself — no extra charge from us, weather and pilots permitting',
       'Your trip photos, shared as a digital album within the week',
     ],
     honesty: [

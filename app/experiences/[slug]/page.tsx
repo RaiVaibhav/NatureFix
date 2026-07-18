@@ -14,6 +14,7 @@ import { WhatsAppIcon } from '@/components/WhatsAppIcon'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { experiences, getExperience } from '@/lib/experiences'
+import { touristTripSchema } from '@/lib/schema'
 
 export async function generateStaticParams() {
   return experiences.map((e) => ({ slug: e.slug }))
@@ -27,9 +28,20 @@ export async function generateMetadata({
   const { slug } = await params
   const experience = getExperience(slug)
   if (!experience) return {}
+  const title = `${experience.name} · Nature Fix`
   return {
     title: experience.name,
     description: experience.promise,
+    alternates: { canonical: `/experiences/${experience.slug}` },
+    openGraph: {
+      title,
+      description: experience.promise,
+      url: `/experiences/${experience.slug}`,
+    },
+    twitter: {
+      title,
+      description: experience.promise,
+    },
   }
 }
 
@@ -46,6 +58,10 @@ export default async function ExperiencePage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(touristTripSchema(experience)) }}
+      />
       <Nav />
       <ScrollProgress />
       <main className="flex-1">
