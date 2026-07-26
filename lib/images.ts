@@ -9,6 +9,10 @@ export const images = {
   // hero double exposure — two green Kangra frames screened over each other. deliberately
   // greenery-and-ridge rather than snow or a wing, so the homepage reads as mountain
   // culture rather than a paragliding operator or a trekking company
+  heroTrail: {
+    src: commons('Hiking_off_to_Laka_Got_from_Triund_(16285401872).jpg'),
+    credit: 'Trail to Laka Got, Triund — Dhauladhar, Wikimedia Commons',
+  },
   heroValley: {
     src: commons('Palampur_tea_plantation,_Himachal_Pradesh,_India.jpg'),
     credit: 'Palampur tea plantation — Kangra valley, Wikimedia Commons',

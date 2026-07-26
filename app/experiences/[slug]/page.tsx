@@ -5,7 +5,7 @@ import { ArrowRight, Check, X } from 'lucide-react'
 import { Nav } from '@/components/sections/Nav'
 import { Footer } from '@/components/sections/Footer'
 import { Reveal } from '@/components/Reveal'
-import { PhotoFrame } from '@/components/PhotoFrame'
+import { HeroBackdrop } from '@/components/HeroBackdrop'
 import { JourneyArc } from '@/components/JourneyArc'
 import { SignatureMoments } from '@/components/SignatureMoments'
 import { ScrollProgress } from '@/components/ScrollProgress'
@@ -66,39 +66,47 @@ export default async function ExperiencePage({
       <Nav />
       <ScrollProgress />
       <main className="flex-1">
-        {/* Hero */}
-        <section className="relative border-b border-line bg-bg-raised">
-          <div className="relative mx-auto grid max-w-6xl gap-10 px-6 pb-16 pt-14 md:grid-cols-2 md:items-center md:pt-20 md:pb-24">
-            <div>
-              <Link
-                href="/experiences"
-                className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.14em] text-accent"
-              >
-                ← All experiences
-              </Link>
-              <h1 className="font-display text-4xl font-medium leading-[1.08] tracking-tight text-ink sm:text-5xl">
-                {experience.name}
-              </h1>
-              <p className="mt-4 max-w-md text-lg text-ink-soft">{experience.promise}</p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                <Badge>{experience.duration}</Badge>
-                <Badge variant="season">{experience.season}</Badge>
-                <Badge>{experience.facts.groupSize}</Badge>
-              </div>
-              <div className="mt-8">
-                <Button asChild size="lg" variant="ember">
-                  <a href="#inquire">Ask about the next dates</a>
-                </Button>
-              </div>
+        {/* Hero — same photographic treatment as the homepage, carrying each
+            experience's own frame */}
+        <section className="relative isolate flex min-h-[72svh] items-center overflow-hidden bg-accent-black lg:min-h-[100svh]">
+          <HeroBackdrop src={experience.heroImage.src} />
+
+          <div className="relative mx-auto w-full max-w-6xl px-6 py-16 md:py-20 lg:py-28">
+            <Link
+              href="/experiences"
+              className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.14em] text-ember-bright transition-colors hover:text-bg"
+            >
+              ← All experiences
+            </Link>
+            <h1 className="max-w-3xl font-display text-4xl font-medium leading-[1.05] tracking-tight text-bg sm:text-5xl lg:text-6xl">
+              {experience.name}
+            </h1>
+            <p className="mt-5 max-w-lg text-lg leading-relaxed text-bg/75">
+              {experience.promise}
+            </p>
+            {/* labels scale up on large screens so they hold their own against the
+                display-size heading rather than reading as fine print */}
+            <div className="mt-6 flex flex-wrap gap-2 lg:mt-8 lg:gap-3">
+              <Badge variant="onDark" className="lg:px-5 lg:py-1.5 lg:text-base">
+                {experience.duration}
+              </Badge>
+              <Badge variant="onDarkEmber" className="lg:px-5 lg:py-1.5 lg:text-base">
+                {experience.season}
+              </Badge>
+              <Badge variant="onDark" className="lg:px-5 lg:py-1.5 lg:text-base">
+                {experience.facts.groupSize}
+              </Badge>
             </div>
-            <PhotoFrame
-              src={experience.heroImage.src}
-              credit={experience.heroImage.credit}
-              alt={experience.heroAlt}
-              className="aspect-[4/3] w-full"
-              wash="light"
-            />
+            <div className="mt-8">
+              <Button asChild size="lg" variant="ember">
+                <a href="#inquire">Ask about the next dates</a>
+              </Button>
+            </div>
           </div>
+
+          <span className="absolute bottom-3 right-4 z-10 hidden text-[10px] tracking-wide text-bg/30 sm:block">
+            {experience.heroImage.credit}
+          </span>
         </section>
 
         {/* Intro + facts */}

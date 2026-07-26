@@ -3,63 +3,13 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { HeroBackdrop } from '@/components/HeroBackdrop'
 import { images } from '@/lib/images'
 
 export function Hero() {
   return (
     <section className="relative isolate flex min-h-[80svh] items-center overflow-hidden bg-accent-black">
-      {/* ── the double exposure ─────────────────────────────────────────────
-          two frames sharing one sheet of film: the tea gardens underneath, the
-          ridge-through-the-canopy screened over them. screen keeps only what is
-          lighter in the second frame, so the two landscapes read through each
-          other instead of one photo simply covering the other. */}
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${images.heroValley.src})` }}
-      />
-      {/* mirrored and pushed off-centre so the two horizons cross rather than
-          landing on top of each other — the overlap is the whole effect */}
-      {/* <div
-        aria-hidden
-        className="absolute inset-0 -translate-y-[6%] scale-x-[-1] scale-110 bg-cover bg-center opacity-70 mix-blend-screen"
-        style={{ backgroundImage: `url(${images.heroRidge.src})` }}
-      /> */}
-
-      {/* pine grade — two different photographers' colour pushed into one brand */}
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-gradient-to-br from-accent-deep/80 via-accent-black/35 to-accent-black/75 mix-blend-multiply"
-      />
-      {/* ember warmth coming up off the valley floor */}
-      <div
-        aria-hidden
-        className="absolute inset-0 mix-blend-screen"
-        style={{
-          background:
-            'radial-gradient(70% 55% at 18% 92%, rgba(196,112,59,0.45) 0%, rgba(234,159,78,0.1) 45%, transparent 72%)',
-        }}
-      />
-      {/* vignette */}
-      <div
-        aria-hidden
-        className="absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(125% 95% at 55% 42%, transparent 45%, rgba(14,23,18,0.6) 100%)',
-        }}
-      />
-      {/* reading scrim — keeps the type legible over a busy frame without flattening
-          the right-hand side, where the valley opens up */}
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-gradient-to-r from-accent-black/90 from-5% via-accent-black/35 via-45% to-transparent to-70%"
-      />
-      {/* settle the base of the frame so the section below starts on a dark edge */}
-      <div
-        aria-hidden
-        className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-accent-black"
-      />
+      <HeroBackdrop src={images.heroValley.src} />
 
       <div className="relative mx-auto w-full max-w-6xl px-6 py-20 md:py-24 min-h-[100svh]">
         <motion.span
@@ -106,11 +56,11 @@ export function Hero() {
       </div>
 
       <span className="absolute bottom-3 right-4 z-10 hidden text-[10px] tracking-wide text-bg/30 sm:block">
-        {images.heroValley.credit}
+        {images.heroTrail.credit}
       </span>
       {/* attribution still ships on mobile, just trimmed to fit one line */}
       <span className="absolute bottom-3 left-6 z-10 text-[10px] tracking-wide text-bg/30 sm:hidden">
-        Palampur, Kangra — Wikimedia Commons
+        Triund, Dhauladhar — Wikimedia Commons
       </span>
     </section>
   )

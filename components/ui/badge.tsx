@@ -10,6 +10,9 @@ const badgeVariants = cva(
         default: 'border-line text-ink-soft bg-transparent',
         season: 'border-ember/40 text-ember-deep bg-ember/10',
         accent: 'border-accent/30 text-accent bg-accent/5',
+        // for the photographic hero, where the light-theme variants disappear
+        onDark: 'border-bg/25 text-bg/80 bg-accent-black/35 backdrop-blur-sm',
+        onDarkEmber: 'border-ember-bright/35 text-ember-bright bg-accent-black/35 backdrop-blur-sm',
       },
     },
     defaultVariants: { variant: 'default' },
