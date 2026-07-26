@@ -12,7 +12,6 @@ const layers = [
 export function Reframe() {
   return (
     <>
-      <MountainDivider from="var(--color-bg-raised)" to="var(--color-accent-deep)" />
       <section className="gradient-dusk topo relative overflow-hidden py-24 sm:py-32">
         <div className="relative mx-auto max-w-6xl px-6">
           <div className="grid items-center gap-14 md:grid-cols-[1.1fr_0.8fr]">

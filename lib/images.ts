@@ -6,6 +6,18 @@ function commons(file: string, width = 1600) {
 }
 
 export const images = {
+  // hero double exposure — two green Kangra frames screened over each other. deliberately
+  // greenery-and-ridge rather than snow or a wing, so the homepage reads as mountain
+  // culture rather than a paragliding operator or a trekking company
+  heroValley: {
+    src: commons('Palampur_tea_plantation,_Himachal_Pradesh,_India.jpg'),
+    credit: 'Palampur tea plantation — Kangra valley, Wikimedia Commons',
+  },
+  heroRidge: {
+    src: commons('Dhauldhar_through_the_Canopy.jpg'),
+    credit: 'Dhauladhar through the canopy, Wikimedia Commons',
+  },
+
   // hero collage — deliberately four different worlds (sky, faith, fire, field),
   // not one dominant paragliding shot, so the homepage doesn't read as a paragliding operator
   heroFly: {
