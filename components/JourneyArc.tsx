@@ -4,7 +4,8 @@ import { useRef } from 'react'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { Footprints } from 'lucide-react'
 import { PhotoFrame } from '@/components/PhotoFrame'
-import type { ArcDay } from '@/lib/experiences'
+import { cn } from '@/lib/utils'
+import type { ArcDay, ArcFrame } from '@/lib/experiences'
 
 export function JourneyArc({ days }: { days: ArcDay[] }) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -59,21 +60,7 @@ function JourneyWaypoint({ day, index }: { day: ArcDay; index: number }) {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className={`grid gap-8 md:grid-cols-2 md:items-center ${flip ? 'md:[&>*:first-child]:order-2' : ''}`}
       >
-        <motion.div
-          initial={{ opacity: 0, scale: 0.94, rotate: flip ? 1.5 : -1.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <PhotoFrame
-            src={day.image.src}
-            credit={day.image.credit}
-            alt={day.imageAlt}
-            className="aspect-[4/3] w-full"
-            rotate={flip ? 1.5 : -1.5}
-            wash="light"
-          />
-        </motion.div>
+        <DayMosaic frames={day.frames} flip={flip} />
         <div>
           <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-ember-deep">
             <Footprints size={13} className="md:hidden" />
@@ -83,6 +70,92 @@ function JourneyWaypoint({ day, index }: { day: ArcDay; index: number }) {
         </div>
       </motion.div>
     </div>
+  )
+}
+
+/**
+ * A day isn't one photograph. Each waypoint gets a 3×3 mosaic whose tiles are sized
+ * unevenly — one lead frame carrying the day, two or three smaller ones for the walk,
+ * the practice, the table. Placement is explicit rather than auto-flowed so the mosaic
+ * can mirror itself on flipped rows and keep leaning into the text column.
+ */
+const MOSAIC: Record<number, { base: string[]; flip: string[] }> = {
+  1: {
+    base: ['col-start-1 col-span-3 row-start-1 row-span-3'],
+    flip: ['col-start-1 col-span-3 row-start-1 row-span-3'],
+  },
+  2: {
+    base: ['col-start-1 col-span-2 row-start-1 row-span-3', 'col-start-3 row-start-1 row-span-3'],
+    flip: ['col-start-2 col-span-2 row-start-1 row-span-3', 'col-start-1 row-start-1 row-span-3'],
+  },
+  3: {
+    base: [
+      'col-start-1 col-span-2 row-start-1 row-span-3',
+      'col-start-3 row-start-1 row-span-2',
+      'col-start-3 row-start-3',
+    ],
+    flip: [
+      'col-start-2 col-span-2 row-start-1 row-span-3',
+      'col-start-1 row-start-1 row-span-2',
+      'col-start-1 row-start-3',
+    ],
+  },
+  4: {
+    base: [
+      'col-start-1 col-span-2 row-start-1 row-span-2',
+      'col-start-3 row-start-1 row-span-2',
+      'col-start-1 row-start-3',
+      'col-start-2 col-span-2 row-start-3',
+    ],
+    flip: [
+      'col-start-2 col-span-2 row-start-1 row-span-2',
+      'col-start-1 row-start-1 row-span-2',
+      'col-start-3 row-start-3',
+      'col-start-1 col-span-2 row-start-3',
+    ],
+  },
+}
+
+function DayMosaic({ frames, flip }: { frames: ArcFrame[]; flip: boolean }) {
+  const shown = frames.slice(0, 4)
+  const cells = (MOSAIC[shown.length] ?? MOSAIC[4])[flip ? 'flip' : 'base']
+  const tilt = flip ? 1.5 : -1.5
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.94, rotate: tilt }}
+      whileInView={{ opacity: 1, scale: 1, rotate: tilt }}
+      viewport={{ once: true, margin: '-100px' }}
+      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      className="grid aspect-[4/3] w-full grid-cols-3 grid-rows-3 gap-2 sm:gap-2.5"
+    >
+      {shown.map((f, i) => (
+        <motion.div
+          key={`${f.src}-${i}`}
+          className={cn('relative', cells[i])}
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.5, delay: 0.1 + i * 0.09, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <PhotoFrame
+            src={f.src}
+            credit={f.credit}
+            alt={f.alt}
+            wash="light"
+            creditMode="hover"
+            // the lead tile is roughly twice the width of the rest, so it gets its own budget
+            sizes={
+              i === 0 ? '(min-width: 1024px) 34vw, 64vw' : '(min-width: 1024px) 17vw, 32vw'
+            }
+            // sized, not positioned: PhotoFrame carries `.grain`, whose unlayered
+            // `position: relative` in globals.css outranks Tailwind's layered `.absolute`,
+            // so an `absolute inset-0` here silently collapses the frame to nothing
+            className="h-full w-full rounded-xl"
+          />
+        </motion.div>
+      ))}
+    </motion.div>
   )
 }
 

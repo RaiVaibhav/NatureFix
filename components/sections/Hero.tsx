@@ -56,11 +56,11 @@ export function Hero() {
       </div>
 
       <span className="absolute bottom-3 right-4 z-10 hidden text-[10px] tracking-wide text-bg/30 sm:block">
-        {images.heroTrail.credit}
+        {images.heroValley.credit}
       </span>
       {/* attribution still ships on mobile, just trimmed to fit one line */}
       <span className="absolute bottom-3 left-6 z-10 text-[10px] tracking-wide text-bg/30 sm:hidden">
-        Triund, Dhauladhar — Wikimedia Commons
+        Palampur, Kangra — Wikimedia Commons
       </span>
     </section>
   )

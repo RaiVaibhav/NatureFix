@@ -1,12 +1,24 @@
 import { images } from '@/lib/images'
 
+export type ArcFrame = { src: string; credit: string; alt: string }
+
 export type ArcDay = {
   day: string
   location: string
   summary: string
-  image: { src: string; credit: string }
-  imageAlt: string
+  /**
+   * A day is several things — a walk, a practice, a table, a sky — so it gets several
+   * frames rather than one. JourneyArc lays 3 out as a mosaic and 4 as a filled grid;
+   * anything past the fourth is dropped, so put the day's strongest image first.
+   */
+  frames: ArcFrame[]
 }
+
+const frame = (photo: { src: string; credit: string }, alt: string): ArcFrame => ({
+  src: photo.src,
+  credit: photo.credit,
+  alt,
+})
 
 export type MomentIcon =
   | 'circle'
@@ -52,7 +64,7 @@ export const experiences: Experience[] = [
     promise: "Don't just take a flight. Understand the sky.",
     duration: 'Fri–Sun',
     season: 'Flying season',
-    heroImage: images.cardLongFlight,
+    heroImage: images.heroFly,
     heroAlt: 'A paraglider working the thermals over Bir-Billing',
     intro:
       'Most people fly Bir once, for fifteen minutes, and spend fourteen of them taking selfies. This weekend is the other way to do it: you learn what a wing actually is with the kit laid out in front of you, you walk the last stretch of the trail up to Billing so the mountain isn’t an abstraction, and then you take the long flight — up to an hour in Himalayan air, working real thermals, climbing like birds.',
@@ -78,24 +90,35 @@ export const experiences: Experience[] = [
         location: 'Bir (~1,400 m)',
         summary:
           'A welcome circle built around one question: what does it actually feel like to fly like a vulture? Then the kit session — a full paraglider comes out of its bag on the lawn and you get hands-on with it, the basics of how a wing actually flies, and how you and your pilot will talk to each other once you’re in the air. A sunset walk to the landing zone to watch the day’s last flights come in, now reading them as a language instead of scenery. Dinner together at a Tibetan family table, then an evening spent simply being together.',
-        image: images.heroFly,
-        imageAlt: 'A paraglider descending toward the Bir landing zone',
+        frames: [
+          frame(images.birLandingZone, 'The Bir landing field as the day’s last flights come in'),
+          frame(images.birSunsetGliders, 'Gliders against an orange sky over Bir'),
+          frame(images.birVillageStreet, 'The Colony road through Bir in the evening'),
+          frame(images.fireCircle, 'An evening spent together around a fire'),
+        ],
       },
       {
         day: 'Saturday',
         location: 'Bir → Billing (~2,430 m) on foot → Bir by air',
         summary:
           "We leave in the morning and walk the upper Billing trail through oak and rhododendron — an old shepherd route, paced kindly, every step up is height you'll spend in the air. We reach the launch by early afternoon, eat, and that's when things start: ground school first — wind cycles, thermals, why the birds circle where they circle. Then UNDERSTANDING THE SKY — up to an hour with a certified tandem pilot, **climbing like birds**, riding ridge lift along the Dhauladhar's shoulder. A quiet sunset, then the flight debrief around the fire.",
-        image: images.dhauladhar,
-        imageAlt: 'The Dhauladhar range above the Billing launch',
+        frames: [
+          frame(images.birGaggle, 'Wings circling together in a thermal above Bir'),
+          frame(images.birForest, 'The forested trail climbing out of Bir toward Billing'),
+          frame(images.billingLaunch, 'Prayer flags at the Billing launch, ridges layered below'),
+          frame(images.shepherds, 'Gaddi shepherds resting on the ridge'),
+        ],
       },
       {
         day: 'Sunday',
         location: 'Bir → a hidden waterfall → Bir',
         summary:
           "A slow morning — you were a bird yesterday. A mindful walk to a hidden waterfall, the contrast deliberate after Saturday's adrenaline. A long café lunch with flight photos finally allowed on the table, then a closing circle: one thing the sky taught you, one thing the water did.",
-        image: images.waterfall,
-        imageAlt: 'A quiet Himachal Pradesh waterfall in the forest',
+        frames: [
+          frame(images.waterfall, 'Banghodu waterfall in its mossy gorge above Bir'),
+          frame(images.forestClimb, 'The forest walk out to the waterfall'),
+          frame(images.birVillageLane, 'A slow café morning on the Bir road'),
+        ],
       },
     ],
     signatureMoments: [
@@ -129,8 +152,8 @@ export const experiences: Experience[] = [
     promise: 'A whole village slows you down — then the Himalayas lift you up.',
     duration: '2.5 days',
     season: 'Long season',
-    heroImage: images.cardBirImmersion,
-    heroAlt: 'Dhauladhar range above Bir at dusk',
+    heroImage: images.birVillageStreet,
+    heroAlt: 'The Colony road through Bir village',
     intro:
       "Two days woven into the life of Bir: Tibetan monasteries and tea gardens, meditation before breakfast, a film about the mountains you're sitting in, a hike to a sunset the road can't reach, a traditional Himachali dham served the way it has been for generations. And on the final afternoon — Himalayan paragliding from Billing, floating down over everything you've just walked through. This isn't sightseeing — it's an immersion, hosted the way we'd host our own friends.",
     facts: {
@@ -154,24 +177,36 @@ export const experiences: Experience[] = [
         location: 'Bir (~1,400 m)',
         summary:
           "Arrive to a long welcome brunch — ninety unhurried minutes that turn the weekend from a booking into a circle. A sunset walk, dinner at a table that belongs to Bir, then the Tibetan Colony by night: handicraft shops still glowing, an early-ish end before Saturday's stillness.",
-        image: images.prayerFlags,
-        imageAlt: 'Prayer flags at a Kangra-valley Tibetan institute',
+        frames: [
+          frame(images.birVillageStreet, 'The Colony road through Bir, shops still open'),
+          frame(images.birStupa, 'A stupa and prayer flags in the Tibetan Colony'),
+          frame(images.birSunsetFlight, 'Sunset over Bir'),
+          frame(images.birMonasteryFlags, 'Prayer flags strung across a Bir monastery'),
+        ],
       },
       {
         day: 'Saturday',
         location: 'Bir → Bari',
         summary:
           "Morning meditation as the village wakes, a Himalayan film screening, then the one real walk of the weekend — a steady climb to Bari, paced kindly, with the valley opening behind you. Hot chai and a mountain sunset at the top, then a traditional dham feast, cooked by a local boti, served the way it has been at village weddings for generations.",
-        image: images.dhauladhar,
-        imageAlt: 'The Dhauladhar range above Bari at sunset',
+        frames: [
+          frame(images.birValley, 'The valley opening up behind the climb to Bari'),
+          frame(images.lushRidge, 'The green ridge above the village'),
+          frame(images.community, 'A village sunset from the top'),
+          frame(images.billingDhauladhar, 'The Dhauladhar catching the last of the light'),
+        ],
       },
       {
         day: 'Sunday',
         location: 'Bir → Billing → Bir',
         summary:
           'A humane 8 AM start with curated meditation and yoga, then a slow café morning — the last of the Bir café magic. A flight briefing for anyone who opted in, then Himalayan paragliding from Billing: 15–30 minutes floating over Sherab Ling Monastery, the Colony. Everyone flying is in the air by ~2:30 at the latest, conditions permitting.',
-        image: images.heroFly,
-        imageAlt: 'A paraglider descending toward Bir',
+        frames: [
+          frame(images.heroFly, 'A paraglider descending over Bir'),
+          frame(images.billingLaunch, 'The launch at Billing before take-off'),
+          frame(images.choklingMonastery, 'Chokling Monastery, one of the roofs you fly over'),
+          frame(images.birGaggle, 'Wings stacked over the valley'),
+        ],
       },
     ],
     signatureMoments: [
@@ -206,8 +241,8 @@ export const experiences: Experience[] = [
     promise: 'Leave lighter than you arrived.',
     duration: 'Fri–Sun',
     season: 'Flying season',
-    heroImage: images.cardRajgundha,
-    heroAlt: 'Tents pitched in the Rajgundha meadow',
+    heroImage: images.uhlTowardsBilling,
+    heroAlt: 'The Uhl valley behind Billing, on the way to Rajgundha',
     intro:
       'Two days in the Himalayas. A night of camping in a quiet valley the road barely reaches. Mornings that begin with mindfulness instead of notifications. And to finish — Himalayan paragliding over the very valley you walked through, if you choose it. Not a trekking package, not a paragliding package — a reset.',
     facts: {
@@ -232,24 +267,36 @@ export const experiences: Experience[] = [
         location: 'Bir (~1,400 m)',
         summary:
           "Arrive, exhale. A ninety-minute welcome circle over chai, a tea-garden sunset walk, dinner together at one long table, and a bonfire if the group's still up for it. Nobody's herded on their first evening.",
-        image: images.teaGarden,
-        imageAlt: 'Tea gardens in the Kangra valley at golden hour',
+        frames: [
+          frame(images.teaGarden, 'Kangra tea gardens at golden hour'),
+          frame(images.birFields, 'Fields below the Tibetan Colony in Bir'),
+          frame(images.community, 'The last of the light over the village'),
+          frame(images.fireCircle, 'A first-night bonfire, for anyone still up'),
+        ],
       },
       {
         day: 'Saturday',
         location: 'Bir → Billing → Rajgundha (~2,500 m)',
         summary:
           "Drive up through Billing into a near-roadless village of slate roofs and terraced fields. Deliberate stillness in the early afternoon — nap, wander, reflect with nothing between you and the ridge — then a short river walk before evening tea. After dark: the fire, the heart of the whole weekend, a gently hosted circle where hosts always share first.",
-        image: images.meadowTents,
-        imageAlt: 'Tents pitched in a high Himalayan meadow',
+        frames: [
+          frame(images.roadlessValley, 'A near-roadless valley of terraced fields and slate roofs'),
+          frame(images.lambaDugStream, 'A side stream running down to the Uhl in evening light'),
+          frame(images.meadowTents, 'Camp pitched on the meadow'),
+          frame(images.uhlRiver, 'The short river walk before evening tea'),
+        ],
       },
       {
         day: 'Sunday',
         location: 'Rajgundha → Chaina Pass (~2,900 m) → Billing → Bir',
         summary:
           'Sunrise mindfulness as first light touches the peaks, then a steady climb to Chaina Pass — tea from the flask, no commentary needed. Down the ridge trail to Billing for a simple lunch, then the way home is yours: fly, hike the Billing–Bir trail, or ride down. One final tea together closes the weekend.',
-        image: images.heroFly,
-        imageAlt: 'A paraglider over the valley below Billing',
+        frames: [
+          frame(images.highPass, 'The high pass above the valley, first light on the scree'),
+          frame(images.uhlTowardsBilling, 'The ridge trail back down towards Billing'),
+          frame(images.billingLaunch, 'Billing, where the ways home split'),
+          frame(images.heroFly, 'Flying home over the valley you walked through'),
+        ],
       },
     ],
     signatureMoments: [
@@ -283,8 +330,8 @@ export const experiences: Experience[] = [
     promise: 'Two days inside the quietest tradition in the Himalayas.',
     duration: 'Fri–Sun',
     season: 'Year-round',
-    heroImage: images.cardStillness,
-    heroAlt: 'Tabo Monastery, Spiti — Himachal Pradesh',
+    heroImage: images.choklingMonastery,
+    heroAlt: 'Chokling Monastery in Bir’s Tibetan Colony',
     intro:
       "Bir is one of the few places in India where mindfulness isn't a retreat-brochure word — it's the neighbourhood. Tibetan monasteries hold evening prayers ten minutes from your bed. A world-respected institute teaches meditation on donation. An 800-year-old Shiva temple stands half an hour down the road. No tents, no trekking, no adrenaline required — just stillness, good tables, and a group small enough to become a sangha.",
     facts: {
@@ -309,24 +356,36 @@ export const experiences: Experience[] = [
         location: 'Bir (~1,400 m)',
         summary:
           "Early arrivals get a long brunch; everyone gets a 2 PM welcome circle — one honest sentence on what you're hoping gets quieter this weekend. A slow, hosted walk through the Tibetan Colony to Chokling Monastery — prayer wheels, butter lamps, standing quietly at the edge of prayers when timing allows. A tea-garden sunset, then dinner at a Tibetan family-run kitchen.",
-        image: images.monastery,
-        imageAlt: 'Chokling-style monastery courtyard in the Kangra valley',
+        frames: [
+          frame(images.choklingApproach, 'The walk up to Chokling Monastery through its gardens'),
+          frame(images.birPrayerHall, 'Evening prayers in the hall, watched from the edge'),
+          frame(images.birManiStones, 'Mani stones carved and painted with mantras'),
+          frame(images.birMonasteryCourtyard, 'A monastery courtyard in the Colony'),
+        ],
       },
       {
         day: 'Saturday',
         location: 'Bir → a hidden waterfall → Bir',
         summary:
           'A proper guided sitting practice from zero, taught for first-timers. Then a mindful walk to a waterfall off the tourist map, one stretch of it in silence. Hot siddu and lunch back in Bir, a protected rest block, another sunset walk, a mountain film and Q&A, and a dham feast to close the day — followed by a gently hosted fire circle.',
-        image: images.waterfall,
-        imageAlt: 'A quiet Himachal Pradesh waterfall in the forest',
+        frames: [
+          frame(images.waterfall, 'Banghodu waterfall, off the tourist map above Bir'),
+          frame(images.forestClimb, 'The mindful walk out, one stretch of it in silence'),
+          frame(images.birMonasteryGate, 'A monastery gate on the way back into the Colony'),
+          frame(images.fireCircle, 'The gently hosted fire circle that closes the day'),
+        ],
       },
       {
         day: 'Sunday',
         location: 'Bir → Baijnath → Bir',
         summary:
           'The final sit of the weekend at the Deer Park Institute, then Baijnath — an 800-year-old stone Shiva temple still in daily worship, timed for a quiet mid-morning visit. A long café lunch, a closing circle, and a take-the-practice-home card. Those who opted in head to Billing for an optional flight; everyone else has a free-flowing afternoon before goodbye tea.',
-        image: images.baijnathTemple,
-        imageAlt: 'Baijnath Temple, Kangra — Himachal Pradesh',
+        frames: [
+          frame(images.baijnathTemple, 'Baijnath’s 800-year-old stone Shiva temple'),
+          frame(images.birInstituteCourt, 'The institute courtyard where the final sit happens'),
+          frame(images.birInstitute, 'Institute grounds and stupas in Bir'),
+          frame(images.birMonks, 'Monks in the Tibetan Colony'),
+        ],
       },
     ],
     signatureMoments: [

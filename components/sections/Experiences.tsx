@@ -25,34 +25,38 @@ export function Experiences() {
         <div className="grid gap-6 sm:grid-cols-2">
           {experiences.map((e, i) => (
             <Reveal key={e.slug} delay={i * 0.08}>
-              <Card className="group h-full transition-all duration-300 hover:-translate-y-1 hover:border-ember hover:shadow-xl hover:shadow-ember/10">
-                <div className="relative">
-                  <PhotoFrame
-                    src={e.heroImage.src}
-                    credit={e.heroImage.credit}
-                    alt={e.heroAlt}
-                    className="aspect-[16/10] w-full rounded-none border-0 border-b border-line"
-                    wash="light"
-                  />
-                  <span className="absolute left-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-bg/30 bg-accent-deep/45 text-ember-bright backdrop-blur-sm">
-                    <Mountain size={16} />
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col gap-3 p-6">
-                  <h3 className="font-display text-xl font-medium text-ink">{e.name}</h3>
-                  <p className="flex-1 text-sm leading-relaxed text-ink-soft">{e.promise}</p>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge>{e.duration}</Badge>
-                    <Badge variant="season">{e.season}</Badge>
+              {/* the whole card is the link — the "Explore" line below is decoration, not a
+                  second target, so there is only ever one thing to click */}
+              <Link
+                href={`/experiences/${e.slug}`}
+                className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+              >
+                <Card className="h-full transition-all duration-300 group-hover:-translate-y-1 group-hover:border-ember group-hover:shadow-xl group-hover:shadow-ember/10">
+                  <div className="relative">
+                    <PhotoFrame
+                      src={e.heroImage.src}
+                      credit={e.heroImage.credit}
+                      alt={e.heroAlt}
+                      className="aspect-[16/10] w-full rounded-none border-0 border-b border-line"
+                      wash="light"
+                    />
+                    <span className="absolute left-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-bg/30 bg-accent-deep/45 text-ember-bright backdrop-blur-sm">
+                      <Mountain size={16} />
+                    </span>
                   </div>
-                  <Link
-                    href={`/experiences/${e.slug}`}
-                    className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-all group-hover:gap-2.5 group-hover:text-ember-deep"
-                  >
-                    Explore <ArrowRight size={15} />
-                  </Link>
-                </div>
-              </Card>
+                  <div className="flex flex-1 flex-col gap-3 p-6">
+                    <h3 className="font-display text-xl font-medium text-ink">{e.name}</h3>
+                    <p className="flex-1 text-sm leading-relaxed text-ink-soft">{e.promise}</p>
+                    <div className="flex flex-wrap gap-2">
+                      <Badge>{e.duration}</Badge>
+                      <Badge variant="season">{e.season}</Badge>
+                    </div>
+                    <span className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-all group-hover:gap-2.5 group-hover:text-ember-deep">
+                      Explore <ArrowRight size={15} />
+                    </span>
+                  </div>
+                </Card>
+              </Link>
             </Reveal>
           ))}
 

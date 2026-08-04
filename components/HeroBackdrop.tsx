@@ -6,15 +6,28 @@
  *
  * Server component on purpose: the experience pages render on the server.
  */
+import Image from 'next/image'
+import { blurFor } from '@/lib/images'
+
 export function HeroBackdrop({ src }: { src: string }) {
+  const blurDataURL = blurFor(src)
+
   return (
     <>
-      <div
+      {/* a real <Image> rather than a CSS background: this is the LCP element on every
+          page that uses it, so it needs a srcset, AVIF/WebP negotiation and an eager,
+          high-priority fetch — none of which a background-image can do */}
+      <Image
+        src={src}
+        alt=""
         aria-hidden
-        className="absolute inset-0 bg-cover bg-center"
-        // quoted: Commons filenames carry parentheses and commas, which are invalid
-        // inside a bare url() token and silently kill the whole declaration
-        style={{ backgroundImage: `url("${src}")` }}
+        fill
+        sizes="100vw"
+        loading="eager"
+        fetchPriority="high"
+        unoptimized={!src.startsWith('/')}
+        {...(blurDataURL ? { placeholder: 'blur' as const, blurDataURL } : {})}
+        className="object-cover"
       />
       {/* pine grade — different photographers' colour pushed into one brand */}
       <div
