@@ -46,15 +46,15 @@ const exists = (p) =>
   )
 
 /** Commons rate-limits aggressively; back off and identify ourselves properly. */
-async function download(file, attempt = 1) {
-  const res = await fetch(commonsUrl(file), {
+async function download(url, attempt = 1) {
+  const res = await fetch(url, {
     headers: { 'User-Agent': 'NatureFix-site-build/1.0 (build-time asset fetch)' },
   })
   if (res.status === 429 && attempt <= 5) {
     const wait = attempt * 4000
     console.log(`   rate-limited, waiting ${wait / 1000}s…`)
     await new Promise((r) => setTimeout(r, wait))
-    return download(file, attempt + 1)
+    return download(url, attempt + 1)
   }
   if (!res.ok) throw new Error(`HTTP ${res.status}`)
   return Buffer.from(await res.arrayBuffer())
@@ -62,10 +62,24 @@ async function download(file, attempt = 1) {
 
 async function main() {
   const src = await readFile(SOURCE, 'utf8')
-  const files = [...new Set([...src.matchAll(/img\(\s*'([^']+)'/g)].map((m) => m[1]))]
+
+  // Two kinds of source. img('File.jpg', …) resolves through Commons' Special:FilePath;
+  // ext('slug', 'https://…', …) carries its own URL, for places Commons simply doesn't
+  // cover — Rajgundha has no Commons presence at all.
+  const commons = [...src.matchAll(/img\(\s*'([^']+)'/g)].map((m) => ({
+    key: m[1],
+    url: commonsUrl(m[1]),
+  }))
+  const external = [...src.matchAll(/ext\(\s*'([^']+)',\s*'([^']+)'/g)].map((m) => ({
+    key: m[1],
+    url: m[2],
+  }))
+
+  const seen = new Set()
+  const files = [...commons, ...external].filter((f) => !seen.has(f.key) && seen.add(f.key))
 
   if (!files.length) {
-    console.error("No img('File.jpg', …) calls found in lib/images.ts — nothing to fetch.")
+    console.error("No img(…) or ext(…) calls found in lib/images.ts — nothing to fetch.")
     process.exit(1)
   }
 
@@ -78,18 +92,18 @@ async function main() {
   let fetched = 0
   let skipped = 0
 
-  for (const file of files) {
-    const name = `${slugify(file)}.jpg`
+  for (const { key, url } of files) {
+    const name = `${slugify(key)}.jpg`
     const dest = path.join(OUT_DIR, name)
 
-    if (!FORCE && manifest[file] && (await exists(dest))) {
+    if (!FORCE && manifest[key] && (await exists(dest))) {
       skipped++
       continue
     }
 
-    process.stdout.write(`   ${file.slice(0, 58)}… `)
+    process.stdout.write(`   ${key.slice(0, 58)}… `)
     try {
-      const raw = await download(file)
+      const raw = await download(url)
 
       // Re-encode rather than storing the original: strips EXIF, normalises to a
       // progressive JPEG, and caps the longest edge so the optimizer starts from a
@@ -110,7 +124,7 @@ async function main() {
         .jpeg({ quality: 40 })
         .toBuffer()
 
-      manifest[file] = {
+      manifest[key] = {
         src: `/img/${name}`,
         width,
         height,
@@ -130,7 +144,7 @@ async function main() {
   // removed — we go through the old manifest rather than globbing public/img — so a photo
   // added by hand is never touched, and everything deleted is one re-run away from coming
   // back. Without this, retired imagery lingers in git and in the deploy forever.
-  const wanted = new Set(files)
+  const wanted = new Set(files.map((f) => f.key))
   let pruned = 0
   for (const [file, entry] of Object.entries(manifest)) {
     if (wanted.has(file)) continue

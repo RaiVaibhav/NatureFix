@@ -17,13 +17,16 @@ type PhotoFrameProps = {
   /**
    * `hover` keeps the attribution out of the way on small frames — a mosaic of
    * thumbnails drowns under six permanent credit badges — while still one gesture away.
+   *
+   * This and `credit` are both still accepted but currently unrendered; see the note
+   * lower down. They stay in the API so call sites keep carrying attribution, ready for
+   * whenever the credits get a home.
    */
   creditMode?: 'always' | 'hover'
 }
 
 export function PhotoFrame({
   src,
-  credit,
   alt,
   className,
   rotate = 0,
@@ -31,7 +34,6 @@ export function PhotoFrame({
   // frames sit in one- or two-column layouts, so half the viewport above the lg
   // breakpoint and the full width below it is the right default
   sizes = '(min-width: 1024px) 50vw, 100vw',
-  creditMode = 'always',
 }: PhotoFrameProps) {
   const [failed, setFailed] = useState(false)
   const blurDataURL = blurFor(src)
@@ -65,17 +67,17 @@ export function PhotoFrame({
       {!failed && wash !== 'none' && (
         <div className={wash === 'full' ? 'duotone absolute inset-0' : 'duotone-light absolute inset-0'} />
       )}
-      {!failed && credit && (
-        <span
-          className={cn(
-            'absolute bottom-2 right-2 z-10 max-w-[92%] truncate rounded-full bg-accent-deep/45 px-2.5 py-1 text-[10px] tracking-wide text-bg/80 backdrop-blur-sm',
-            creditMode === 'hover' &&
-              'opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100',
-          )}
-        >
-          {credit}
-        </span>
-      )}
+      {/*
+        The credit chip is deliberately not rendered. Every photo on the site is a
+        placeholder pending the real shoot, and "— Wikimedia Commons" stamped across each
+        frame reads as an unfinished template rather than as photography.
+
+        Attribution is NOT dropped: `credit` still travels with every Photo in
+        lib/images.ts, because most of this imagery is CC BY / CC BY-SA, where attribution
+        is a licence condition rather than a courtesy. Before this ships publicly the
+        credits need somewhere to live — a credits page, or captions under the real
+        photographs. Tracked in docs/hero-imagery.md.
+      */}
     </div>
   )
 }

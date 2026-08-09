@@ -33,6 +33,18 @@ function img(file: string, credit: string): Photo {
 }
 
 /**
+ * Sources that aren't on Commons — Flickr CC-BY, mostly — for places Commons doesn't
+ * cover. Keyed by an explicit slug rather than a filename, since the URL is opaque.
+ */
+function ext(key: string, url: string, credit: string): Photo {
+  const local = entries[key]
+  if (local) {
+    return { src: local.src, credit, width: local.width, height: local.height, blurDataURL: local.blurDataURL }
+  }
+  return { src: url, credit }
+}
+
+/**
  * Blur placeholder for an already-resolved local src, keyed by path rather than by
  * Commons filename. Lets PhotoFrame and HeroBackdrop keep taking a plain `src` string
  * — as every call site already passes — while still getting a blur-up.
@@ -121,7 +133,61 @@ export const images = {
   barotValley: img('View_of_Barot_valley_01.jpg', 'The Barot valley — Mandi, Wikimedia Commons'),
   roadlessValley: img('Camping_at_foothills_of_himalayas.jpg', 'A roadless Himalayan valley — Wikimedia Commons'),
   meadowTents: img('Camping_Site_at_Triund_Hill_Top.jpg', 'A Dhauladhar meadow camp — Wikimedia Commons'),
-  highPass: img('Thamsar_Pass.jpg', 'Thamsar Pass, above the Uhl valley — Wikimedia Commons'),
+  // Rajgundha itself. Commons has zero coverage of the village — nothing for Rajgundha,
+  // Chhota Bhangal or Bara Bhangal — so per the geography rule above, these come from a
+  // Flickr set shot in the valley (CC BY 2.0, Ashish Gupta) rather than from a lookalike
+  // somewhere else. Two caveats: they cap at 1024px, fine for arc tiles but thin for a
+  // hero, and they were shot in late September, so they read mistier and greener than an
+  // October or May run actually looks. First in line for replacement by real photography.
+  rajgundhaValley: ext(
+    'rajgundha-valley',
+    'https://live.staticflickr.com/65535/51822951184_97c109535d_b.jpg',
+    'The valley at Rajgundha — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  rajgundhaCamp: ext(
+    'rajgundha-camp',
+    'https://live.staticflickr.com/65535/51823329980_514fb4bffc_b.jpg',
+    'Camp at Rajgundha — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  rajgundhaTents: ext(
+    'rajgundha-tents',
+    'https://live.staticflickr.com/65535/51822610806_077899816b_b.jpg',
+    'Tents on the Rajgundha meadow — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  rajgundhaRiverCrossing: ext(
+    'rajgundha-river-crossing',
+    'https://live.staticflickr.com/65535/51823329080_5d7b89361b_b.jpg',
+    'The bridge over the Uhl below Rajgundha — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  rajgundhaSunset: ext(
+    'rajgundha-sunset',
+    'https://live.staticflickr.com/65535/51823329310_18f1593a32_b.jpg',
+    'Evening light over the Rajgundha ridges — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  // The shrine on the pass, with the ground falling away — the "little temple at the
+  // pass" the Sunday sit is built around. Replaces a Thamsar Pass frame that was simply
+  // the wrong mountain: Thamsar is ~4,700 m on the Bara Bhangal route, nothing like the
+  // 2,900 m of grass this weekend walks up to.
+  rajgundhaPass: ext(
+    'rajgundha-pass',
+    'https://live.staticflickr.com/65535/51822611196_7800428665_b.jpg',
+    'The shrine on the pass above Rajgundha — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  rajgundhaFlags: ext(
+    'rajgundha-flags',
+    'https://live.staticflickr.com/65535/51822951729_a66226afd4_b.jpg',
+    'Prayer flags above the valley — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  rajgundhaTrail: ext(
+    'rajgundha-trail',
+    'https://live.staticflickr.com/65535/51823330285_3e83353423_b.jpg',
+    'The trail into Rajgundha — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
+  rajgundhaHouse: ext(
+    'rajgundha-house',
+    'https://live.staticflickr.com/65535/51822951304_4c469c4bb0_b.jpg',
+    'A slate-roofed house in the mist — Ashish Gupta, Flickr (CC BY 2.0)',
+  ),
 
   // ——— trail, shepherds, forest ———
   shepherds: img(

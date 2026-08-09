@@ -66,7 +66,11 @@ function JourneyWaypoint({ day, index }: { day: ArcDay; index: number }) {
             <Footprints size={13} className="md:hidden" />
             {day.day} · {day.location}
           </span>
-          <p className="mt-3 text-base leading-relaxed text-ink">{renderEmphasis(day.summary)}</p>
+          <h3 className="mt-3 font-display text-2xl font-medium leading-tight tracking-tight text-ink sm:text-[1.75rem]">
+            {day.title}
+          </h3>
+          <p className="mt-2 text-base leading-snug text-ember-deep">{day.hook}</p>
+          <p className="mt-4 text-base leading-relaxed text-ink-soft">{renderEmphasis(day.summary)}</p>
         </div>
       </motion.div>
     </div>

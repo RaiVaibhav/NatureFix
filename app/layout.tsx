@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     template: "%s · Nature Fix",
   },
   description,
+  keywords: ["Bir Billing paragliding", "Rajgundha camping", "Himalayan weekends", "mountain community", "Nature Fix", "Ishani mountain instructor", "meditation retreats Himachal", "tandem paragliding India"],
   alternates: {
     canonical: "/",
   },
@@ -63,6 +64,38 @@ const organizationSchema = {
     "@type": "Place",
     name: "Bir, Himachal Pradesh, India",
   },
+  founder: [
+    {
+      "@type": "Person",
+      "name": "Ishani",
+      "jobTitle": "Founder & Professional Mountain Instructor",
+      "description": "Certified Wilderness EMT, record Himalayan ascents, and trauma-informed facilitator."
+    },
+    {
+      "@type": "Person",
+      "name": "Vaibhav",
+      "jobTitle": "Co-Founder",
+      "description": "Systems builder ensuring seamless hospitality and operations."
+    }
+  ],
+  makesOffer: [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "TouristTrip",
+        "name": "The Bir Immersion",
+        "description": "A 3-day village weekend in Bir featuring Tibetan culture, a hike to Bari, and Himalayan paragliding."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "TouristTrip",
+        "name": "The Rajgundha Reset",
+        "description": "A 3-day mountain weekend camping in the Rajgundha valley, mindful walks, and paragliding from Billing."
+      }
+    }
+  ],
   sameAs: ["https://www.instagram.com/adventureishani/"],
 };
 

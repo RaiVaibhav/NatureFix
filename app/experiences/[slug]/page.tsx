@@ -104,9 +104,8 @@ export default async function ExperiencePage({
             </div>
           </div>
 
-          <span className="absolute bottom-3 right-4 z-10 hidden text-[10px] tracking-wide text-bg/30 sm:block">
-            {experience.heroImage.credit}
-          </span>
+          {/* hero credit hidden while the imagery is placeholder — see PhotoFrame for why,
+              and for the attribution that still has to land before launch */}
         </section>
 
         {/* Intro + facts */}
