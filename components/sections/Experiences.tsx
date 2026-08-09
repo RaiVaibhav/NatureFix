@@ -23,15 +23,17 @@ export function Experiences() {
         </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-2">
-          {experiences.map((e, i) => (
+          {experiences.map((e, i) => {
+            const isComingSoon = e.isComingSoon;
+            return (
             <Reveal key={e.slug} delay={i * 0.08}>
-              {/* the whole card is the link — the "Explore" line below is decoration, not a
-                  second target, so there is only ever one thing to click */}
               <Link
-                href={`/experiences/${e.slug}`}
-                className="group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+                href={isComingSoon ? '#' : `/experiences/${e.slug}`}
+                className={`group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${isComingSoon ? 'opacity-70 pointer-events-none' : ''}`}
+                aria-disabled={isComingSoon}
+                tabIndex={isComingSoon ? -1 : 0}
               >
-                <Card className="h-full transition-all duration-300 group-hover:-translate-y-1 group-hover:border-ember group-hover:shadow-xl group-hover:shadow-ember/10">
+                <Card className={`h-full transition-all duration-300 ${isComingSoon ? '' : 'group-hover:-translate-y-1 group-hover:border-ember group-hover:shadow-xl group-hover:shadow-ember/10 border-accent'}`}>
                   <div className="relative">
                     <PhotoFrame
                       src={e.heroImage.src}
@@ -48,17 +50,18 @@ export function Experiences() {
                     <h3 className="font-display text-xl font-medium text-ink">{e.name}</h3>
                     <p className="flex-1 text-sm leading-relaxed text-ink-soft">{e.promise}</p>
                     <div className="flex flex-wrap gap-2">
-                      <Badge>{e.duration}</Badge>
-                      <Badge variant="season">{e.season}</Badge>
+                      <Badge className={!isComingSoon ? 'bg-accent text-bg border-accent hover:bg-accent' : ''}>{isComingSoon ? 'Coming soon' : e.season}</Badge>
+                      <Badge variant="season">{e.duration}</Badge>
                     </div>
-                    <span className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-all group-hover:gap-2.5 group-hover:text-ember-deep">
-                      Explore <ArrowRight size={15} />
+                    <span className={`mt-1 inline-flex items-center gap-1.5 text-sm font-semibold transition-all ${isComingSoon ? 'text-ink-soft' : 'text-accent group-hover:gap-2.5 group-hover:text-ember-deep'}`}>
+                      {isComingSoon ? 'Coming soon' : 'Explore'} {isComingSoon ? null : <ArrowRight size={15} />}
                     </span>
                   </div>
                 </Card>
               </Link>
             </Reveal>
-          ))}
+            )
+          })}
 
           <Reveal delay={0.32} className="sm:col-span-2">
             <div className="gradient-pine topo flex flex-col items-start gap-4 rounded-2xl p-8 sm:flex-row sm:items-center sm:justify-between">

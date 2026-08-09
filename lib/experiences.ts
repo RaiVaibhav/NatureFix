@@ -59,15 +59,113 @@ export type Experience = {
   signatureMoments: SignatureMoment[]
   whatsHandled: string[]
   honesty: string[]
+  isComingSoon?: boolean
 }
 
 export const experiences: Experience[] = [
+  {
+    slug: 'rajgundha-reset',
+    name: 'The Rajgundha Reset',
+    promise: 'Leave lighter than you arrived.',
+    duration: 'Fri–Sun',
+    season: 'Oct 10-12',
+    heroImage: images.uhlTowardsBilling,
+    heroAlt: 'The Uhl valley behind Billing, on the way to Rajgundha',
+    intro:
+      'Two days in the Himalayas. A night of camping in a quiet valley the road barely reaches. Mornings that begin with mindfulness instead of notifications. And to finish — Himalayan paragliding over the very valley you walked through, if you choose it. Not a trekking package, not a paragliding package — a reset.',
+    facts: {
+      groupSize: '8–12 — small on purpose',
+      fitness: 'Genuinely easy. Sunday’s gradual walk up to Chaina Pass is the one real stretch, and the vehicle goes the same way for anyone who’d rather ride.',
+      season: 'October–November and March–May. We don’t run this in monsoon.',
+      whoItsFor: 'Anyone who needs to breathe. First-timers especially welcome — nothing here needs experience, only warm socks.',
+    },
+    forYouIf: [
+      'Stillness makes more sense to you around a fire than on a cushion in a hall',
+      'You want a night where the road runs out — no signal, no streetlights, just the valley and the stars',
+      "A checklist weekend feels thin, but you can't disappear for a fortnight to fix it",
+      "You'd like paragliding to be how the weekend ends, not the reason you came",
+    ],
+    notForYouIf: [
+      'You need daily hot showers — camp night has none, and it’s worth it',
+      'You want a packed itinerary — Saturday afternoon is deliberately, beautifully nothing',
+    ],
+    arc: [
+      {
+        day: 'Friday',
+        location: 'Bir (~1,400 m)',
+        title: 'Let the noise drop',
+        hook: 'A mindful walk past a monastery, to a sunset worth standing still for.',
+        summary:
+          "Arrive, exhale. A ninety-minute welcome circle over chai, then a mindful walk straight out from where you're staying — quiet trails, past a monastery, to a sunset worth standing still for. Dinner together at one long table, and a bonfire if the group's still up for it. Nobody's herded on their first evening.",
+        frames: [
+          frame(images.teaGarden, 'Kangra tea gardens at golden hour'),
+          frame(images.birSunsetGliders, 'The last wings against an orange sky over Bir'),
+          frame(images.choklingApproach, 'The monastery the evening walk passes through'),
+          frame(images.fireCircle, 'A first-night bonfire, for anyone still up'),
+        ],
+      },
+      {
+        day: 'Saturday',
+        location: 'Bir → Billing → Chaina Pass (~2,900 m) → Rajgundha (~2,500 m)',
+        title: 'Where the road ends, the valley begins',
+        hook: 'An afternoon of deliberate nothing, and a river to walk down to.',
+        summary:
+          "Out of Bir after a proper breakfast — no dawn starts here. We climb up through Billing and stop at **Chaina Pass** for tea, with the whole Dhauladhar spread out in front of you. Then we drop into Rajgundha, where the road gives up and the valley takes over. Settle in, eat lunch together around midday, and let the afternoon be exactly as empty as you'd like it — nap in the sun, wander the lanes, or simply sit and look. We walk down to the **Uhl** at half past two, because the light goes early up here. Evening tea, and then the fire — the heart of the whole weekend, a circle where your hosts always speak first.",
+        frames: [
+          frame(images.rajgundhaValley, 'The valley opening up at Rajgundha'),
+          frame(images.rajgundhaCamp, 'Camp pitched on the meadow at Rajgundha'),
+          frame(images.rajgundhaRiverCrossing, 'The bridge over the Uhl, on the walk down to the river'),
+          frame(images.rajgundhaSunset, 'Evening light coming off the ridges'),
+        ],
+      },
+      {
+        day: 'Sunday',
+        location: 'Rajgundha → Chaina Pass (~2,900 m) → Billing (~2,430 m) → Bir',
+        title: 'The last quiet, then the pass',
+        hook: 'Meditation and yoga, a gradual climb to the pass, then the choice to fly home over everything you walked.',
+        summary:
+          'The last day opens at eight with meditation and yoga — no dawn alarm, nobody hurried out of this valley. Breakfast, then the walk up to **Chaina Pass**: a steady, gradual climb, paced kindly. Tea at the top and a long sit in front of the high Himalayas, and the vehicle meets us right there for the ride down to Billing. A simple lunch at the launch, then the way home is yours: fly, walk the Billing–Bir trail, or ride down with us. One final tea together closes the weekend.',
+        frames: [
+          frame(images.rajgundhaPass, 'The shrine at Chaina Pass, the valley falling away behind'),
+          frame(images.rajgundhaFlags, 'Prayer flags on the ridge above the valley'),
+          frame(images.billingLaunch, 'Billing, where the ways home split'),
+          frame(images.heroFly, 'Flying home over the valley you walked through'),
+        ],
+      },
+    ],
+    signatureMoments: [
+      { title: 'The Friday welcome circle over chai — ninety unhurried minutes', icon: 'circle' },
+      { title: 'A mindful walk to sunset on the first evening, past a monastery on the way', icon: 'sunset' },
+      { title: 'A short river walk below Rajgundha — cold water, warm boulders, zero hurry', icon: 'waterfall' },
+      { title: 'The Saturday-night fire circle at Rajgundha — the heart of the weekend', icon: 'fire' },
+      { title: 'Meditation and yoga to open the last morning — no dawn alarm', icon: 'yoga' },
+      { title: 'The walk up to Chaina Pass — tea, silence, the high Himalayas in front of you', icon: 'hike' },
+      { title: 'Paragliding home over the very valley you walked through, if you choose it', icon: 'flight' },
+    ],
+    whatsHandled: [
+      '2 nights’ stay: Bir (optional Friday) + Rajgundha camp (Saturday)',
+      'All ground transport from Bir onward',
+      'Every meal, Friday dinner to Sunday goodbye tea',
+      'Hosted walks, the sharing circle, morning meditation',
+      'Tandem paragliding for those who opt in — no extra charge from us',
+      'Your trip photos, shared as a digital album within the week',
+    ],
+    honesty: [
+      'Food up high is simple, not fancy — dal-rice, parathas, Maggi, honest mountain food.',
+      'Meals are handled, but carry your own snacks and dry fruits for Saturday’s walk down to the river.',
+      "Paragliding is your choice at booking, at no extra charge. Weather has the final word — if flying isn't possible, everyone comes down together by trail or vehicle.",
+      "The cold is the real discomfort risk, not the walking — the kit list is firm for a reason.",
+      'Network is decent in Bir, weak at Billing, basically none in Rajgundha — your family’s emergency-contact line is set up before we lose signal.',
+      'No alcohol on the trail or at the Saturday fire.',
+    ],
+  },
   {
     slug: 'understanding-the-sky',
     name: 'Understanding the Sky',
     promise: "Don't just take a flight. Understand the sky.",
     duration: 'Fri–Sun',
     season: 'Flying season',
+    isComingSoon: true,
     heroImage: images.heroFly,
     heroAlt: 'A paraglider working the thermals over Bir-Billing',
     intro:
@@ -162,6 +260,7 @@ export const experiences: Experience[] = [
     promise: 'A whole village slows you down — then the Himalayas lift you up.',
     duration: '2.5 days',
     season: 'Long season',
+    isComingSoon: true,
     heroImage: images.birVillageStreet,
     heroAlt: 'The Colony road through Bir village',
     intro:
@@ -252,107 +351,12 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    slug: 'rajgundha-reset',
-    name: 'The Rajgundha Reset',
-    promise: 'Leave lighter than you arrived.',
-    duration: 'Fri–Sun',
-    season: 'Flying season',
-    heroImage: images.uhlTowardsBilling,
-    heroAlt: 'The Uhl valley behind Billing, on the way to Rajgundha',
-    intro:
-      'Two days in the Himalayas. A night of camping in a quiet valley the road barely reaches. Mornings that begin with mindfulness instead of notifications. And to finish — Himalayan paragliding over the very valley you walked through, if you choose it. Not a trekking package, not a paragliding package — a reset.',
-    facts: {
-      groupSize: '8–12 — small on purpose',
-      fitness: 'Genuinely easy. Sunday’s gradual walk up to Chaina Pass is the one real stretch, and the vehicle goes the same way for anyone who’d rather ride.',
-      season: 'October–November and March–May. We don’t run this in monsoon.',
-      whoItsFor: 'Anyone who needs to breathe. First-timers especially welcome — nothing here needs experience, only warm socks.',
-    },
-    forYouIf: [
-      'Stillness makes more sense to you around a fire than on a cushion in a hall',
-      'You want a night where the road runs out — no signal, no streetlights, just the valley and the stars',
-      "A checklist weekend feels thin, but you can't disappear for a fortnight to fix it",
-      "You'd like paragliding to be how the weekend ends, not the reason you came",
-    ],
-    notForYouIf: [
-      'You need daily hot showers — camp night has none, and it’s worth it',
-      'You want a packed itinerary — Saturday afternoon is deliberately, beautifully nothing',
-    ],
-    arc: [
-      {
-        day: 'Friday',
-        location: 'Bir (~1,400 m)',
-        title: 'Let the noise drop',
-        hook: 'A mindful walk past a monastery, to a sunset worth standing still for.',
-        summary:
-          "Arrive, exhale. A ninety-minute welcome circle over chai, then a mindful walk straight out from where you're staying — quiet trails, past a monastery, to a sunset worth standing still for. Dinner together at one long table, and a bonfire if the group's still up for it. Nobody's herded on their first evening.",
-        frames: [
-          frame(images.teaGarden, 'Kangra tea gardens at golden hour'),
-          frame(images.birSunsetGliders, 'The last wings against an orange sky over Bir'),
-          frame(images.choklingApproach, 'The monastery the evening walk passes through'),
-          frame(images.fireCircle, 'A first-night bonfire, for anyone still up'),
-        ],
-      },
-      {
-        day: 'Saturday',
-        location: 'Bir → Billing → Chaina Pass (~2,900 m) → Rajgundha (~2,500 m)',
-        title: 'Where the road ends, the valley begins',
-        hook: 'An afternoon of deliberate nothing, and a river to walk down to.',
-        summary:
-          "Out of Bir after a proper breakfast — no dawn starts here. We climb up through Billing and stop at **Chaina Pass** for tea, with the whole Dhauladhar spread out in front of you. Then we drop into Rajgundha, where the road gives up and the valley takes over. Settle in, eat lunch together around midday, and let the afternoon be exactly as empty as you'd like it — nap in the sun, wander the lanes, or simply sit and look. We walk down to the **Uhl** at half past two, because the light goes early up here. Evening tea, and then the fire — the heart of the whole weekend, a circle where your hosts always speak first.",
-        frames: [
-          frame(images.rajgundhaValley, 'The valley opening up at Rajgundha'),
-          frame(images.rajgundhaCamp, 'Camp pitched on the meadow at Rajgundha'),
-          frame(images.rajgundhaRiverCrossing, 'The bridge over the Uhl, on the walk down to the river'),
-          frame(images.rajgundhaSunset, 'Evening light coming off the ridges'),
-        ],
-      },
-      {
-        day: 'Sunday',
-        location: 'Rajgundha → Chaina Pass (~2,900 m) → Billing (~2,430 m) → Bir',
-        title: 'The last quiet, then the pass',
-        hook: 'Meditation and yoga, a gradual climb to the pass, then the choice to fly home over everything you walked.',
-        summary:
-          'The last day opens at eight with meditation and yoga — no dawn alarm, nobody hurried out of this valley. Breakfast, then the walk up to **Chaina Pass**: a steady, gradual climb, paced kindly. Tea at the top and a long sit in front of the high Himalayas, and the vehicle meets us right there for the ride down to Billing. A simple lunch at the launch, then the way home is yours: fly, walk the Billing–Bir trail, or ride down with us. One final tea together closes the weekend.',
-        frames: [
-          frame(images.rajgundhaPass, 'The shrine at Chaina Pass, the valley falling away behind'),
-          frame(images.rajgundhaFlags, 'Prayer flags on the ridge above the valley'),
-          frame(images.billingLaunch, 'Billing, where the ways home split'),
-          frame(images.heroFly, 'Flying home over the valley you walked through'),
-        ],
-      },
-    ],
-    signatureMoments: [
-      { title: 'The Friday welcome circle over chai — ninety unhurried minutes', icon: 'circle' },
-      { title: 'A mindful walk to sunset on the first evening, past a monastery on the way', icon: 'sunset' },
-      { title: 'A short river walk below Rajgundha — cold water, warm boulders, zero hurry', icon: 'waterfall' },
-      { title: 'The Saturday-night fire circle at Rajgundha — the heart of the weekend', icon: 'fire' },
-      { title: 'Meditation and yoga to open the last morning — no dawn alarm', icon: 'yoga' },
-      { title: 'The walk up to Chaina Pass — tea, silence, the high Himalayas in front of you', icon: 'hike' },
-      { title: 'Paragliding home over the very valley you walked through, if you choose it', icon: 'flight' },
-    ],
-    whatsHandled: [
-      '2 nights’ stay: Bir (optional Friday) + Rajgundha camp (Saturday)',
-      'All ground transport from Bir onward',
-      'Every meal, Friday dinner to Sunday goodbye tea',
-      'Hosted walks, the sharing circle, morning meditation',
-      'Tandem paragliding for those who opt in — no extra charge from us',
-      'Your trip photos, shared as a digital album within the week',
-    ],
-    honesty: [
-      'Food up high is simple, not fancy — dal-rice, parathas, Maggi, honest mountain food.',
-      'Meals are handled, but carry your own snacks and dry fruits for Saturday’s walk down to the river.',
-      "Paragliding is your choice at booking, at no extra charge. Weather has the final word — if flying isn't possible, everyone comes down together by trail or vehicle.",
-      "The cold is the real discomfort risk, not the walking — the kit list is firm for a reason.",
-      'Network is decent in Bir, weak at Billing, basically none in Rajgundha — your family’s emergency-contact line is set up before we lose signal.',
-      'No alcohol on the trail or at the Saturday fire.',
-    ],
-  },
-  {
     slug: 'stillness-and-sangha',
     name: 'Stillness & Sangha',
     promise: 'Two days inside the quietest tradition in the Himalayas.',
     duration: 'Fri–Sun',
     season: 'Year-round',
+    isComingSoon: true,
     heroImage: images.choklingMonastery,
     heroAlt: 'Chokling Monastery in Bir’s Tibetan Colony',
     intro:
@@ -443,6 +447,7 @@ export const experiences: Experience[] = [
       'No alcohol at the fire circle — stillness is better sober.',
     ],
   },
+
 ]
 
 export function getExperience(slug: string) {

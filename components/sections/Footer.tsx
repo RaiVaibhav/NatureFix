@@ -25,7 +25,7 @@ export function Footer() {
               <Link href="/experiences" className="text-sm text-bg/85 hover:text-ember-bright">Experiences</Link>
               <Link href="/#community" className="text-sm text-bg/85 hover:text-ember-bright">Community</Link>
               <Link href="/about" className="text-sm text-bg/85 hover:text-ember-bright">About</Link>
-              <Link href="/for-teams" className="text-sm text-bg/85 hover:text-ember-bright">For Teams</Link>
+              <Link href="/for-teams" className="text-sm text-bg/85 hover:text-ember-bright">For Teams (Coming soon)</Link>
             </div>
             <div className="grid content-start gap-2.5">
               <b className="mb-1 text-xs font-semibold uppercase tracking-[0.12em] text-bg/55">
