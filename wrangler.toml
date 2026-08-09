@@ -1,0 +1,8 @@
+name = "naturefix"
+pages_build_output_dir = ".vercel/output/static"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[services]]
+binding = "WORKER_SELF_REFERENCE"
+service = "naturefix"
