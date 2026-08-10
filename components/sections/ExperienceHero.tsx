@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { WhatsAppIcon } from '@/components/WhatsAppIcon'
 import { HeroBackdrop } from '@/components/HeroBackdrop'
 import type { Experience } from '@/lib/experiences'
 

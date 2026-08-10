@@ -120,7 +120,7 @@ export function Trust() {
       {/* CTA Button */}
       <div className="mx-auto mt-10 max-w-6xl">
         <Reveal delay={0.3}>
-          <Button asChild variant="outline">
+          <Button asChild variant="ghost">
             <Link href="/about">More about us →</Link>
           </Button>
         </Reveal>
