@@ -79,7 +79,7 @@ export default function ExperiencesIndex() {
               </p>
               <Button asChild variant="ember">
                 <a
-                  href={`https://wa.me/910000000000?text=${encodeURIComponent(
+                  href={`https://wa.me/917780935412?text=${encodeURIComponent(
                     'Hi! Let me know when The Full Circle / The Thamsar Push opens up.',
                   )}`}
                   rel="noopener"
