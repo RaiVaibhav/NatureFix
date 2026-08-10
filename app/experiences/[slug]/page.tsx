@@ -5,13 +5,12 @@ import { ArrowRight, Check, X } from 'lucide-react'
 import { Nav } from '@/components/sections/Nav'
 import { Footer } from '@/components/sections/Footer'
 import { Reveal } from '@/components/Reveal'
-import { HeroBackdrop } from '@/components/HeroBackdrop'
+import { ExperienceHero } from '@/components/sections/ExperienceHero'
 import { JourneyArc } from '@/components/JourneyArc'
 import { SignatureMoments } from '@/components/SignatureMoments'
 import { ScrollProgress } from '@/components/ScrollProgress'
 import { MountainDivider } from '@/components/MountainDivider'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
-import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { experiences, getExperience } from '@/lib/experiences'
 import { touristTripSchema } from '@/lib/schema'
@@ -66,47 +65,9 @@ export default async function ExperiencePage({
       <Nav />
       <ScrollProgress />
       <main className="flex-1">
-        {/* Hero — same photographic treatment as the homepage, carrying each
-            experience's own frame */}
-        <section className="relative isolate flex min-h-[72svh] items-center overflow-hidden bg-accent-black lg:min-h-[100svh]">
-          <HeroBackdrop src={experience.heroImage.src} />
-
-          <div className="relative mx-auto w-full max-w-6xl px-6 py-16 md:py-20 lg:py-28">
-            <Link
-              href="/experiences"
-              className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.14em] text-ember-bright transition-colors hover:text-bg"
-            >
-              ← All experiences
-            </Link>
-            <h1 className="max-w-3xl font-display text-4xl font-medium leading-[1.05] tracking-tight text-bg sm:text-5xl lg:text-6xl">
-              {experience.name}
-            </h1>
-            <p className="mt-5 max-w-lg text-lg leading-relaxed text-bg/75">
-              {experience.promise}
-            </p>
-            {/* labels scale up on large screens so they hold their own against the
-                display-size heading rather than reading as fine print */}
-            <div className="mt-6 flex flex-wrap gap-2 lg:mt-8 lg:gap-3">
-              <Badge variant="onDark" className="lg:px-5 lg:py-1.5 lg:text-base">
-                {experience.duration}
-              </Badge>
-              <Badge variant="onDarkEmber" className="lg:px-5 lg:py-1.5 lg:text-base">
-                {experience.season}
-              </Badge>
-              <Badge variant="onDark" className="lg:px-5 lg:py-1.5 lg:text-base">
-                {experience.facts.groupSize}
-              </Badge>
-            </div>
-            <div className="mt-8">
-              <Button asChild size="lg" variant="ember">
-                <a href="#inquire">Ask about the next dates</a>
-              </Button>
-            </div>
-          </div>
-
-          {/* hero credit hidden while the imagery is placeholder — see PhotoFrame for why,
-              and for the attribution that still has to land before launch */}
-        </section>
+        {/* Hero — pulled out into a Client Component to allow direct motion animations
+            that match the feel of the main site homepage */}
+        <ExperienceHero experience={experience} />
 
         {/* Intro + facts */}
         <section className="relative py-20 sm:py-24">
@@ -248,19 +209,19 @@ export default async function ExperiencePage({
               Ask about the next dates
             </h2>
             <p className="mx-auto mt-4 max-w-md text-bg/70">
-              A short WhatsApp message gets you real dates, real pricing, and a real human.
+              A short WhatsApp message gets you availability, pricing, and a full itinerary.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Button asChild size="lg" variant="ember">
                 <a
                   href={`https://wa.me/917780935412?text=${encodeURIComponent(
-                    `Hi! Can I get the itinerary and next dates for ${experience.name}?`,
+                    `Hi! Can I get the pricing and a full itinerary for ${experience.name}?`,
                   )}`}
                   rel="noopener"
                   target="_blank"
                 >
                   <WhatsAppIcon size={18} />
-                  Get itinerary &amp; dates
+                  Get pricing &amp; details
                 </a>
               </Button>
             </div>

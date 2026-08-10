@@ -1,320 +1,350 @@
 {
   "0051423_Baijnath_temple,_Vaidyanatha_mandir,_Baijnath_Himachal_Pradesh_135_(cropped).jpg": {
-    "src": "/img/0051423-baijnath-temple-vaidyanatha-mandir-baijnath-himachal-pradesh-1.jpg",
+    "src": "/img/0051423-baijnath-temple-vaidyanatha-mandir-baijnath-himachal-pradesh-1.webp",
     "width": 2000,
     "height": 286,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAACAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIE/8QAHhAAAgEDBQAAAAAAAAAAAAAAAQIAAxIhIjEyUWH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABcRAQADAAAAAAAAAAAAAAAAAAABMkH/2gAMAwEAAhEDEQA/AMgqPautuPcoMzKCxJOdz6YiIqjX/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoMAAIAA4BaJQBOgCG8O5+AAP5ATe7cFywh0NZccQJm+la7QNXaeAAA"
   },
   "A_Stupa_at_Bir_Tibetan.jpg": {
-    "src": "/img/a-stupa-at-bir-tibetan.jpg",
+    "src": "/img/a-stupa-at-bir-tibetan.webp",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBv/EACAQAAIBAwQDAAAAAAAAAAAAAAECBAADBRESITNxctH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQACEf/aAAwDAQACEQMRAD8AqjZZrcMPdVUIBIAbXdx9rNyJchr7u9oszncSTpSsf2N60UjubzQdvZuAL//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoMAAkAA4BaJZACdAERCCHAtjtAAP7KkN6MllufrJk5n+8IbNZ36+HbbLe+49hGSEZky+bP84GO8ecEmkhjB/ojdGKHAFJxoAA="
+  },
+  "badge-wafa": {
+    "src": "/img/badge-wafa.webp",
+    "width": 300,
+    "height": 300,
+    "blurDataURL": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4WAoAAAAQAAAACwAACwAAQUxQSFoAAAABYFRbW5TvJwklZMnaoQyZtIaGcv0PzGSICLVt2zD2VFLfgCPE940gB4J/NGd9PAjpzyqi+U8IltlyNs66XVnzQM3HmW2AWd7XWIugq5L1IIK/5x+H37+v/w5WUDggcAAAABACAJ0BKgwADAADgFolmAJ0APmLetAOgQAA/uaTg3+80A5jQC+dwfH8szhzHMeLgrs4sQo+KoUQ7haBr0Ws+cceVrItUk/rfRwAmDX2iLZv0Le5v96csT8bjcvNH2gI5g0n6mQIHcrx354KGQ/9AAA="
+  },
+  "badge-wemt": {
+    "src": "/img/badge-wemt.webp",
+    "width": 300,
+    "height": 300,
+    "blurDataURL": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4WAoAAAAQAAAACwAACwAAQUxQSFQAAAABYFNbW5DvP3SRFLoyKnXIRA5MpBP8b+H8GSJCbds2jD2V1DeUTOUdRZZkyh13epapfaw5F3/ThU+A6ZyVxcbFU/Edzh0jFnFJOCj68ZBtv4/tdwFWUDggZgAAADACAJ0BKgwADAADgFolAE6AxarNh2NuBRgAAP7SlQw7t4CUJN8SKDhMv0rNDPVSqb0Y6d5eaFZ97rUlZxoeoWnfu496yPLTYfWU87+b41c1qN2jojEeSkFOluqK9GhR5CDUg9AAAA=="
+  },
+  "badge-wfa": {
+    "src": "/img/badge-wfa.webp",
+    "width": 300,
+    "height": 300,
+    "blurDataURL": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4WAoAAAAQAAAACwAACwAAQUxQSFcAAAABYBRJkpTeWClrAp7wu9WgCWyAJr6zU9xYiAi1bdsw9lRS31AMqratVogKSrODL0lB0042y+yTSjAHDMqRzIOZrsefcJpvfItXiRtefA76+fHx+7revwsAVlA4IHAAAADQAQCdASoMAAwAA4BaJagAAlmEG20MAAD+5pOcZBs/KeLh5nM0hle1kKhRdZtvAh+RleywdOAJXBwARvWg2v1+QkK5vqG4QvrBmYzvx9op6kHWp9ThsD1ifjVKkEIydzzfKME3YG8YDnuNbJm3gAAA"
+  },
+  "badge-wfr": {
+    "src": "/img/badge-wfr.webp",
+    "width": 300,
+    "height": 300,
+    "blurDataURL": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4WAoAAAAQAAAACwAACwAAQUxQSFQAAAABYFTbVpXLIgopdMjQbxoykYNMOoR3/FshItS2bcPYU0l9Q94plhLlvJxCNrAc5JR2Wq2NPamHCliFbqXxYGNcsAfMGL7xLV4l3CUfg7b08+Pn7wJWUDggbAAAAPABAJ0BKgwADAADgFolsAJ0ANxNNHVQqAD+5pOb8Wrq25EoOCFrF1MaF5a+tgM1XX7GRotUCy+oQwlaUehAn7S5a8Akj1H130TYcGvtEZndlOxBV8GJQ/ECZXlrbnBwzBk3r7IirzUFEgAAAA=="
   },
   "Banghodu_Waterfall.jpg": {
-    "src": "/img/banghodu-waterfall.jpg",
+    "src": "/img/banghodu-waterfall.webp",
     "width": 681,
     "height": 1222,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVAAwDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBBAX/xAAiEAACAQMEAgMAAAAAAAAAAAABAgMABBESITFBBVETIoH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAwT/xAAaEQADAQADAAAAAAAAAAAAAAAAAQIhEiJB/9oADAMBAAIRAxEAPwBt55dZpo/g+oGpnGAM7cH9xWRcySNKcMDt3TYosQ375DBBoUnncgkj3SknhXUHDMc8+6jccZTQS90lSdLNkkEHC9DAq5c2YhaMGWRi0asTsBuOqKK0NdUHp//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBACdASoMABUAPu1iqU2ppaOiMAgBMB2JaACdABtzEPxyRiM6CKSvlAD+5+I9FjVlBf5ORTT5VEgiRVJwfcFYlKuAK6yZ24Qb4xmDe6NtH2EKNwrm7sRiUIFNmK86KOKxVKbZTCaDvYBPTTG1H6VD3kcBgaDlZ7WJl9meV9/qPGX/v561NlEateBFvMRi0EsYbAAA"
   },
   "Billing,_Kangra.jpg": {
-    "src": "/img/billing-kangra.jpg",
+    "src": "/img/billing-kangra.webp",
     "width": 1156,
     "height": 867,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwQFBv/EACAQAAIBBAEFAAAAAAAAAAAAAAECAAMEBRFxITM0QWH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABgRAQEAAwAAAAAAAAAAAAAAAAIAEUFh/9oADAMBAAIRAxEAPwBuhlraowCFt/ekI2bt6bFSlU69quxM9b9k8CWrHxU4hvGqEdv/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoMAAkAA4BaJZACdAELMH4DQAD+09qvuRleij0K2Zg5W9n+RiD8CX//qwT7maTLhaOm6I4rbN8EErkAAAA="
   },
   "Bir_Billing-_Paragliding_Capital_of_India.jpg": {
-    "src": "/img/bir-billing-paragliding-capital-of-india.jpg",
+    "src": "/img/bir-billing-paragliding-capital-of-india.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgQF/8QAHxAAAgEEAgMAAAAAAAAAAAAAAQIAAwURMiJBcZLR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAXEQEAAwAAAAAAAAAAAAAAAAAAARIT/9oADAMBAAIRAxEAPwC83SixIw6nvj8jW70FGC7epmImyeTE+xk9JNX/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoMAAkAA4BaJZgCsAEfbIYnWXAA/uqo/GkivnCwaA+5OoXspA+f7lfpR+qehm6bFDtIAA=="
   },
   "Bir_forest.jpg": {
-    "src": "/img/bir-forest.jpg",
+    "src": "/img/bir-forest.webp",
     "width": 1836,
     "height": 3264,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAVAAwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEFAgT/xAAhEAACAQMEAwEAAAAAAAAAAAABAhEAAxIEITFBExRx8f/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAECMQP/2gAMAwEAAhEDEQA/AKntaIAnylo6Cnf5XFc114vKC3aXpSJNT9IMLOKs+QkkftaRXEzkd9u9qi+lvAplaJbjlUDsWMcnmkl66MhkDDETHNFFVQP/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQAwCdASoMABUAPu1iqU2ppaOiMAgBMB2JZgAAWppDGytyTJWOigAA/rFmf8P+u10Xa7qF37NoO8RgzbkWshNiOspP1/MLbZvFfSAqknWrrQ7UOPtaqHlpocf99EjOCbeMwfF5BTkgunICnQA8ORJM0AA="
   },
   "Bir_Village_01.jpg": {
-    "src": "/img/bir-village-01.jpg",
+    "src": "/img/bir-village-01.webp",
     "width": 2000,
     "height": 1334,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAHRAAAgMAAgMAAAAAAAAAAAAAAQIAAxEEQQUTIf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAExISL/2gAMAwEAAhEDEQA/AKH8mwqZ/QNCk/OjkyLORYXO2YewoiJN9UayH//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoMAAgAA4BaJZgCdADbye2wAP7UbcxSGBRSHg9tQNHhc3ZA6uU48Ofg3LtQEmn1JmQZbc6sghmd7Ea7+TwIQAAA"
   },
   "Bir_Village_05.jpg": {
-    "src": "/img/bir-village-05.jpg",
+    "src": "/img/bir-village-05.webp",
     "width": 2000,
     "height": 1334,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAHBABAQACAwEBAAAAAAAAAAAAAQIAAxEhQQQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAYEQACAwAAAAAAAAAAAAAAAAAAIQECMf/aAAwDAQACEQMRAD8Aofob51pMDtroroOfXjM67+lpamVfUXGMnZ6OEf/Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoMAAgAA4BaJZgCdAEfBKlyZcwAAP389zGTgwXvWviO+4pHeULTCbZ1rQKr8CClVGgiXQukYPbMAHB/kpAwAA=="
   },
   "Bir_village.jpg": {
-    "src": "/img/bir-village.jpg",
+    "src": "/img/bir-village.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAHxAAAQQABwAAAAAAAAAAAAAAAQACAwQFERIhUWHB/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAABAgMT/9oADAMBAAIRAxEAPwCJxu2YtMULW9ndZktq895cXkE8DLxEQq2QmaP/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoMAAgAA4BaJagCdAELY9CSYAAA/phMjrivaSFcNT/Em9w2WPnS8qnF4crG9050fsiZdPAAAAA="
   },
   "Bir-06-Kloster-gje.jpg": {
-    "src": "/img/bir-06-kloster-gje.jpg",
+    "src": "/img/bir-06-kloster-gje.webp",
     "width": 2000,
     "height": 1131,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAL/xAAfEAACAgEEAwAAAAAAAAAAAAABAgADMQQREhRBUZH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAAMAAAAAAAAAAAAAAAAAAAABEv/aAAwDAQACEQMRAD8AhNVZdWoTiB5XbAjs2gAKwA9EY+REjbHKP//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoMAAcAA4BaJZACdADhaBSMC14AAPjdwqnAfHEuDnuI4F4pxGTAlFcdnkkETCl4qVk0CT0WAo0hkLjrLxr6AAAA"
   },
   "Bir-08-Kloster-Innenhof-gje.jpg": {
-    "src": "/img/bir-08-kloster-innenhof-gje.jpg",
+    "src": "/img/bir-08-kloster-innenhof-gje.webp",
     "width": 2000,
     "height": 1104,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEE/8QAHRAAAQQCAwAAAAAAAAAAAAAAEQABAgQDISIxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAWEQADAAAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AJWvWnhFpWIDXcXPobaxWrVueUyyEMOLhkRDWPEf/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoMAAcAA4BaJZACdACwDhwkAADN89iyy2DUoepPVPD4kUfC6tTrvx/kKScLEHZnZWRpTa3xGe6W3RNMgtKWAAAA"
   },
   "Bir-Billing.jpg": {
-    "src": "/img/bir-billing.jpg",
+    "src": "/img/bir-billing.webp",
     "width": 1334,
     "height": 736,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAfEAACAQQCAwAAAAAAAAAAAAABAgADBAUREiExktH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECEhP/2gAMAwEAAhEDEQA/AJkvLBQSzVOjoAJ5lCZnGhdca/qPsRFrIFEf/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoMAAcAA4BaJQBOgB6GLOvgAPqT9ShRRNlm3VQYi9EJXcvHGbW4Ts7L/hbk4tXKhIAAAA=="
   },
   "BirC004-.jpg": {
-    "src": "/img/birc004.jpg",
+    "src": "/img/birc004.webp",
     "width": 2000,
     "height": 1330,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIE/8QAHRABAAICAgMAAAAAAAAAAAAAAQIDABIEERNxof/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAZEQACAwEAAAAAAAAAAAAAAAAAAQIDERL/2gAMAwEAAhEDEQA/AMvIlKm2yMt4+MO9Ykg9/Mstr1F2BOzYBTGMVZJPdDiLP//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoMAAgAA4BaJZACdADJsRgmgAD9o8BGkluPLcJelCB5KoAJjSsRXRJiOKgT5bKru1VN1nuozIde+b7npMT9GAbSgAA="
   },
   "BirC087-.jpg": {
-    "src": "/img/birc087.jpg",
+    "src": "/img/birc087.webp",
     "width": 2000,
     "height": 1335,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAaEAACAwEBAAAAAAAAAAAAAAABAgADIQQT/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABkRAAMAAwAAAAAAAAAAAAAAAAABAhEhUf/aAAwDAQACEQMRAD8Aie3o81YkgjNWQdKNbaWUDREQoeNoa+H/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoMAAgAA4BaJaACdADaPUtpAAD9nIlB1y83WOUs27Mr8n5SclQv8JobdgAdJSbw8WR/ZqN1LlGEfYoZAAAAAA=="
   },
   "BirC115-.jpg": {
-    "src": "/img/birc115.jpg",
+    "src": "/img/birc115.webp",
     "width": 2000,
     "height": 1330,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAeEAACAwABBQAAAAAAAAAAAAABAgAEEQMFEiExUf/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEhEf/aAAwDAQACEQMRAD8An9HvJUHN3uyFmQAKffk6ZOs2S3O51s05nyIgSpTYf//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoMAAgAA4BaJQBOgBtj6rqAAP7w4ORO5dLEObnrP+WKW21qRnhhMtuTUeIS74izGgopRgrBm3yDnLGoAAA="
   },
   "BirF091-.jpg": {
-    "src": "/img/birf091.jpg",
+    "src": "/img/birf091.webp",
     "width": 2000,
     "height": 1335,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAGxAAAQUBAQAAAAAAAAAAAAAAAQACAwQRITH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AzITVbEHhjO6SC1UmSscAkzOYPAiIE//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoMAAgAA4BaJYwCdADdkdC7hmAA/uYK770G0MltWfH/UAqiN1M+hgan9Olauz8iMOxhfooAAAA="
   },
   "Campfire_flames_at_night.jpg": {
-    "src": "/img/campfire-flames-at-night.jpg",
+    "src": "/img/campfire-flames-at-night.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIAAwQREyIxQoH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAFxEAAwEAAAAAAAAAAAAAAAAAABEhEv/aAAwDAQACEQMRAD8AzWM2NSj8gZ39daA+7ly1xbry9BFSEDrrxEQ81iuI/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoMAAgAA4BaJZACdACzKAv4AAD++JObU1Xd381fP7DamV/dhZmk7xgV+osZUklNFJuFVQX4gQziBE/ghM0FHolw3lHJO+MTwweAAA=="
   },
   "Camping_at_foothills_of_himalayas.jpg": {
-    "src": "/img/camping-at-foothills-of-himalayas.jpg",
+    "src": "/img/camping-at-foothills-of-himalayas.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwEF/8QAIBAAAgICAAcAAAAAAAAAAAAAAQIAAwQRBRMiMTJy0f/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQACEf/aAAwDAQACEQMRAD8AtfFskYYr5iMddLsDsfZlWNmO5JuBPtBp7CO/lIdM8C//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoMAAkAA4BaJQBOgCK3gkO1lwAA/gsl/ca9393oJsWKyIdOtnUKoZMfQCBH4oN4EN3R/ctGqAA="
   },
   "Camping_Site_at_Triund_Hill_Top.jpg": {
-    "src": "/img/camping-site-at-triund-hill-top.jpg",
+    "src": "/img/camping-site-at-triund-hill-top.webp",
     "width": 1280,
     "height": 1920,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASAAwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAQT/xAAhEAACAgICAQUAAAAAAAAAAAABAgADBBEFIRIxMlFhcf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwT/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAQMS/9oADAMBAAIRAxEAPwCxdyuLWFAyqtkdANvqLfOptIYZVYGtdMJEXFq8SVUd/MQ/G1E7V2H0ITSFzXUvub8mn1hCZlH/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACQAwCdASoMABIAPu1iqU2ppaOiMAgBMB2JZQCdAB6I4nv8V9UAAP7qls5BfwTWUEUG+ezP8q/qyKkW7UhWmUUA9BhLE9iJ5bU80OuAQVPKbnRAAAA="
   },
   "Chokling_Monastery,_Bir,_Himachal_Pradesh.jpg": {
-    "src": "/img/chokling-monastery-bir-himachal-pradesh.jpg",
+    "src": "/img/chokling-monastery-bir-himachal-pradesh.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgP/xAAfEAEBAAIABwEAAAAAAAAAAAACAQADBAUREiExM0H/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAQADAQAAAAAAAAAAAAAAAAEAAhED/9oADAMBAAIRAxEAPwBvj69zOh0g2T5dbkzzTTDIikv29l84H7mPDLI7soeIk//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoMAAkAA4BaJbACdAELhzvMn70AAP6Y+OpWZRF0uwZ7qWQcxzkUF2NohpDzG95sD7fUjKDhBZkulA6uk6kAKw3rtyKSrJM/jBmAAA=="
   },
   "Chokling_Monastery,_Bir.jpg": {
-    "src": "/img/chokling-monastery-bir.jpg",
+    "src": "/img/chokling-monastery-bir.webp",
     "width": 1600,
     "height": 747,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAGAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAED/8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIDBAAREiL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABkRAAEFAAAAAAAAAAAAAAAAAAACERIxQf/aAAwDAQACEQMRAD8AlZ7Er6a3Kyp6PWsyaS0ZZALTLy2iOARjGQmprGH/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoMAAYAA4BaJagCdAEfbUUFXl4AAPul6fbRx4spQyYtE88gEHp2b2kgZKTe7PG7V254N0iAtTQX7sVHRjHai0rlmRmQ0wDAAAA="
   },
   "Chokling_Monastery,_External_View.jpg": {
-    "src": "/img/chokling-monastery-external-view.jpg",
+    "src": "/img/chokling-monastery-external-view.webp",
     "width": 1496,
     "height": 1496,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAMAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQED/8QAHhAAAgICAgMAAAAAAAAAAAAAAQMCEQAhE4EiMXH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABcRAAMBAAAAAAAAAAAAAAAAAAABEhP/2gAMAwEAAhEDEQA/AEptQ6APKaI0QLPvMYuQuwVAm7ufkT2MDgyVkXXzKGM3U5DvGzJlH//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoMAAwAA4BaJYgCdAD5gGu8omgAAP7nU6od0du7Pp3l4QbW+Fj/VkUxLEw1JCR7qSTeTyVqYjYqy4hWIYJOfcwhAAA="
   },
   "Climbing_up_from_Triund_(8680905196).jpg": {
-    "src": "/img/climbing-up-from-triund-8680905196.jpg",
+    "src": "/img/climbing-up-from-triund-8680905196.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgED/8QAIRAAAgIBAgcAAAAAAAAAAAAAAQMAAhEEEiEyQlFSgfH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAAhL/2gAMAwEAAhEDEQA/AM1PYNEpXTRm4VPbjDXVO24Qa4BItjyz8lHL7hMn0ycl/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoMAAkAA4BaJQBOgB+DLIhuQAD2v0XQL75OQkIWq8bYM8/FNrHbI86A3+aKi10zZj/rkJjaa7Aoh82hvAAAAA=="
   },
   "Dhauladhar_layers.JPG": {
-    "src": "/img/dhauladhar-layers.jpg",
+    "src": "/img/dhauladhar-layers.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAdEAABBAIDAAAAAAAAAAAAAAACAAEDBBETIVFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABgRAAIDAAAAAAAAAAAAAAAAAAACAQMT/9oADAMBAAIRAxEAPwCOCWiEWTlHHjuorF2rtfXGZD2/CIlm5w81P//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAgCdASoMAAgAA4BaJagCdGuAAs06nQhOAAD+wbQjI2Xa7S828Gqfo+xDwUP8bTdXuwvjcDb4egrzlRPrFEAA"
   },
   "Dhauladhar_range.jpg": {
-    "src": "/img/dhauladhar-range.jpg",
+    "src": "/img/dhauladhar-range.webp",
     "width": 2000,
     "height": 794,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAFAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAHhAAAgEEAwEAAAAAAAAAAAAAAQIAAwQFESFRcbH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEQMRAD8Ayauf40tnTHrEyVs5ck7RKKDoJv7ES9aRgv/Z"
+    "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoMAAUAA4BaJQBdgCHElJcAAPfLW0bpZ1o78p505yR7VmU5pTTFL9430g5AAA=="
   },
   "Dhauldhar_through_the_Canopy.jpg": {
-    "src": "/img/dhauldhar-through-the-canopy.jpg",
+    "src": "/img/dhauldhar-through-the-canopy.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAME/8QAHhAAAgIBBQEAAAAAAAAAAAAAAQMAAgQFERITIYH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwDDjK0lV+bGBh28BPgkM7H0tzhZWR01FQONRv8AYiKa/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoMAAgAA4BaJZQC7AD8LQFHPEgAAP7u8830wE4tb99smgEa6TTj7jZut5LCy5NGaEBiRvSH+aTuFXg+AAA="
   },
   "Fields_near_bir_tibetan_colony.jpg": {
-    "src": "/img/fields-near-bir-tibetan-colony.jpg",
+    "src": "/img/fields-near-bir-tibetan-colony.webp",
     "width": 768,
     "height": 1024,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQQG/8QAHhAAAgICAgMAAAAAAAAAAAAAAQIDEQAhBDEFYbH/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAABIT/9oADAMBAAIRAxEAPwB+dAAQLJOvWHSwoX2hNa6GZ1vJ86VdzSG+zdfMnnmCPTPMxIu7xaDD/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoMABAAA4BaJQBOj+ACdW6lVMMAAP7tptYuvP65q6wdgzDpv/3VGABxZPtO1pQRzVRZA1saA23E3mO2WFHFpgI8sFkkFXcgAAA="
   },
   "Gaddi_shepherds_having_a_good_time_(16260304116).jpg": {
-    "src": "/img/gaddi-shepherds-having-a-good-time-16260304116.jpg",
+    "src": "/img/gaddi-shepherds-having-a-good-time-16260304116.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIDBf/EACMQAAICAAMJAAAAAAAAAAAAAAECAAQDESEFBiIjMTJRYXL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAABEv/aAAwDAQACEQMRAD8AODti1XPLKlPDDOPZ3isM6lAF4dQADrn7mO/U/Rkn7pLdH//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoMAAkAA4BaJZAAAuXduI0cAAD82VlmxQ8ImV0AekwCHjJm8Yv3w0mH2IrSCSHO1X+J/zpIwAA="
   },
   "Gaggle_-_Paragliding_in_Bir,_Himachal_Pradesh.jpg": {
-    "src": "/img/gaggle-paragliding-in-bir-himachal-pradesh.jpg",
+    "src": "/img/gaggle-paragliding-in-bir-himachal-pradesh.webp",
     "width": 2000,
     "height": 3000,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASAAwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFBAb/xAAiEAEAAgIBAgcAAAAAAAAAAAABAgMABBEFBhIhQmFygZH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABgRAQADAQAAAAAAAAAAAAAAAAABElFh/9oADAMBAAIRAxEAPwDbDpQecwie7xjmjqBw2w+hc42q/Yrl4q9iyL83KdPcV1VZC6qm2Z6lYr+Y1+hpGJdatfKq8YiuGGTKpf/Z"
+    "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoMABIAPu1iqU2ppaOiMAgBMB2JQBOmUABsCQ+N2aDw5MqgAPJzEN8eSERwmm1PpPugXv3+7qeLl8Xxp7GotRD3Cypd6zRCErMq6qHIlvzvIOWI1W4Pl8Xx/ctEQAAA"
   },
   "Hikers_IIT_Mandi_Griffon_Peak,_Himachal_Jan20_D72_13723.jpg": {
-    "src": "/img/hikers-iit-mandi-griffon-peak-himachal-jan20-d72-13723.jpg",
+    "src": "/img/hikers-iit-mandi-griffon-peak-himachal-jan20-d72-13723.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAX/xAAjEAABAwIFBQAAAAAAAAAAAAABAAIDBBEFEhMxgSEjNGHB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABkRAAMAAwAAAAAAAAAAAAAAAAABAgMhMf/aAAwDAQACEQMRAD8ApzVpA7eS9tieqA6tmc4nVaPRICXDvx9UDFvPk4QWSuDcStn/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoMAAkAA4BaJZgCdAERAja2YAD+6ydWiNr5MxdtE+h6Al2eVVkfFKXtc8mlvyfMsYb2iblrBheYZRWVBI8gAA=="
   },
   "Hiking_off_to_Laka_Got_from_Triund_(16285401872).jpg": {
-    "src": "/img/hiking-off-to-laka-got-from-triund-16285401872.jpg",
+    "src": "/img/hiking-off-to-laka-got-from-triund-16285401872.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAA//EAB0QAAICAgMBAAAAAAAAAAAAAAECAAMEIREjMsH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAAMBAAAAAAAAAAAAAAAAAAABAxH/2gAMAwEAAhEDEQA/ABTH4ZQbWcka7DqFfTmVWkJnWFTscOT9iDyIFnqTqjD0/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoMAAkAA4BaJaACdADzmXsAAP67bciH0AT48Cm/LCmISCIT+hx1YKKBEHNyEEC2MsPSWwcuEd0BW2FHvncnKl+YgAA="
+  },
+  "ishani-profile": {
+    "src": "/img/ishani-profile.webp",
+    "width": 500,
+    "height": 586,
+    "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoMAA4AA4BaJbACdADdR4huZaTAAPz6CT++gKhJP02BkKivK4+2YTtXCFeBvWPIUxW7nYe/fH7QUQwFfNz/uhLdAXMFWEUmyYIFyumw14KBTCbxe74JPBlQ38wmHhQAAAA="
   },
   "Lamba_Dug_Barot_Himachal_Oct20_R16_04289.jpg": {
-    "src": "/img/lamba-dug-barot-himachal-oct20-r16-04289.jpg",
+    "src": "/img/lamba-dug-barot-himachal-oct20-r16-04289.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAHhAAAQQDAAMAAAAAAAAAAAAAAQACAwQREyESQXH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AiC1aNURySB4jAIdk9Hr6s6c2drnaceXeuHURSw1//9k="
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoMAAgAA4BaJZQAAxXkplq9wADOPzEx+ECDhH8Kum656/A+g2fab9yd5v6f72jP7La8iExBwnuD+LoAAAA="
   },
   "Monks_in_bir_tibetan_colony.jpg": {
-    "src": "/img/monks-in-bir-tibetan-colony.jpg",
+    "src": "/img/monks-in-bir-tibetan-colony.webp",
     "width": 768,
     "height": 1024,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUG/8QAHxAAAgICAgMBAAAAAAAAAAAAAQIDBAAREiEFMVGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAA//EABcRAQEBAQAAAAAAAAAAAAAAAAEAEQL/2gAMAwEAAhEDEQA/AH8+zWJ0hrSoY5F0WjOyT8JzPXk43Zg2thtHKEVG7VtRRGuzRpMDzU9Edd/mBfp3Jb88kdSUo7kqdexhLrPzgX//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADwAQCdASoMABAAA4BaJagCdADdcVYjhCAA/u5lcuxU1FGJnvwMJ6VXd9HRN0lay+XoRB5yPPmB2hWvn1vG8zcPJLlz1Oe9Sv/XD30imZ1WJ/aEWQl4oey7uO3d9dx6mPzQ/PzkmlYAAA=="
   },
   "Palampur_tea_plantation,_Himachal_Pradesh,_India.jpg": {
-    "src": "/img/palampur-tea-plantation-himachal-pradesh-india.jpg",
+    "src": "/img/palampur-tea-plantation-himachal-pradesh-india.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAT/xAAfEAABBAAHAAAAAAAAAAAAAAACAAEDEQQFEhQiMVH/xAAVAQEBAAAAAAAAAAAAAAAAAAAABP/EABcRAAMBAAAAAAAAAAAAAAAAAAACEQP/2gAMAwEAAhEDEQA/AJI80xkgVKQyXfIu2Usu4kLURs716iKZtWsEP//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoMAAgAA4BaJbAAAmclG1oAAM3z5Ad6AJV7X29Uas7i6TwO6hk7Q29e5nAWQ8SuVjchlb2t/bCgAA=="
   },
   "Pasture_Land_of_Bir,_himachal_Pradesh.jpg": {
-    "src": "/img/pasture-land-of-bir-himachal-pradesh.jpg",
+    "src": "/img/pasture-land-of-bir-himachal-pradesh.webp",
     "width": 1280,
     "height": 960,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAF/8QAHxAAAQMDBQAAAAAAAAAAAAAAAQACEQMEBSExQXGi/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARL/2gAMAwEAAhEDEQA/AI5a5cdazp6gJjLXkCK3lZnCQ2UdUv/Z"
+    "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoMAAkAA4BaJYgAAuc6h5ZPgAD+kb93GKw1K69PJmtrsI+goPp4Gkq3G6AAAA=="
   },
   "People_sitting_around_a_camp_fire.jpg": {
-    "src": "/img/people-sitting-around-a-camp-fire.jpg",
+    "src": "/img/people-sitting-around-a-camp-fire.webp",
     "width": 1920,
     "height": 2560,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAG/8QAGxABAAMBAAMAAAAAAAAAAAAAAQACEQMEIUH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMeD7z5KJx8i3EuBVLmImw11lH//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoMABAAA4BaJZwAAudP2ugA/vkMwmsSX3k/u2rGCq4wAA=="
   },
   "rajgundha-camp": {
-    "src": "/img/rajgundha-camp.jpg",
+    "src": "/img/rajgundha-camp.webp",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwIE/8QAIBAAAQMCBwAAAAAAAAAAAAAAAQACAyExBBESEyNh8P/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERAhP/2gAMAwEAAhEDEQA/AMUUkzYiN94pkG38Usc+M0DmA6cKomWKsKHbciYYmf/Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoMAAkAA4BaJbACdAEVjWk2gAD+wdCu1xH19EO0UPbEZKLUIXyii/WozCNUVlF2kvAi71NIAn2JiS/NCjgAAA=="
   },
   "rajgundha-flags": {
-    "src": "/img/rajgundha-flags.jpg",
+    "src": "/img/rajgundha-flags.webp",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAID/8QAIRAAAQMEAQUAAAAAAAAAAAAAAwACEQEFEiFxBCIyNMH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABcRAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhEDEQA/ANG3GmFID3TG3wrL14huxK0jHRMar9QReLOUG4+6XlTrWxHnJ//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoMAAkAA4BaJbACdADYuXaAAP6W4o+gW2xbSbs8LXangUzs8fZpDH/b4aiPJuHCMt5d4cNBKBK9N05c2M6k7KAAAAA="
   },
   "rajgundha-house": {
-    "src": "/img/rajgundha-house.jpg",
+    "src": "/img/rajgundha-house.webp",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAfEAABAwQDAQAAAAAAAAAAAAABAAIDERIzYQQFMnH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABYRAAMAAAAAAAAAAAAAAAAAAAABEv/aAAwDAQACEQMRAD8AHwZHxvL2AClAbjpKk7Bt2AndyPFgb9KnJ7UrY5R//9k="
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoMAAkAA4BaJYgCdH8AE6nfy3AA/tl3m7ZWRGhRVJLPleqnQKQBLQwQpKbwY+3Lp8czxhyvKOyCRBgAAAA="
   },
   "rajgundha-pass": {
-    "src": "/img/rajgundha-pass.jpg",
+    "src": "/img/rajgundha-pass.webp",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBf/EABwQAAICAgMAAAAAAAAAAAAAAAEDABECMgRBgf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAwDAQACEQMRAD8AgWw2CW5Go55YB78qBmrJns3k6r1kwL//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoMAAkAA4BaJZgCdACqqHnjJ4AA/rxrnSa4AG6/4dmQgRWcqI9Vr6aD0FMFXAdy/YIaHrD6VyVkAAAA"
   },
   "rajgundha-river-crossing": {
-    "src": "/img/rajgundha-river-crossing.jpg",
+    "src": "/img/rajgundha-river-crossing.webp",
     "width": 777,
     "height": 1024,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAgX/xAAfEAACAgEEAwAAAAAAAAAAAAABAgMRAAUSITETMkH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABgRAAIDAAAAAAAAAAAAAAAAAAABERIh/9oADAMBAAIRAxEAPwCPDB5H2uXXi+q6xXCCbcC+fTKk8caShomJ+VfWCLS5JQzRQK67jySMirEYf//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAgCdASoMABAAA4BaJYgCsAEO9bkev42kAAD+7q88xIUOZFPYIpkA2KmP0qcNP+oBUX+ROkR51tv93Cd2RPBwEkmqLPaTtxtJM8JkBwjMtD1KgAA="
   },
   "rajgundha-sunset": {
-    "src": "/img/rajgundha-sunset.jpg",
+    "src": "/img/rajgundha-sunset.webp",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EACAQAAEEAgEFAAAAAAAAAAAAAAIAAQMRBBMSIUFCcXL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABkRAAIDAQAAAAAAAAAAAAAAAAACAQQTUf/aAAwDAQACEQMRAD8AyY8mAgsuYP8AN2llzIdj6scnDtZdVHxb2hkmy5DJOH//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoMAAkAA4BaJbACdGuAAsOl81YAAP67rUk+nTU6sGivdsaF9GfQXAxfku9SPgj8WKvjraejUDkAAA=="
   },
   "rajgundha-tents": {
-    "src": "/img/rajgundha-tents.jpg",
+    "src": "/img/rajgundha-tents.webp",
     "width": 1024,
     "height": 768,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAB/8QAIBAAAQQCAQUAAAAAAAAAAAAAAQACAxEEBXEhIjEyM//EABUBAQEAAAAAAAAAAAAAAAAAAAEE/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECAzH/2gAMAwEAAhEDEQA/ACwbHLgjEToWkEd1uHXlUmwle4E44uq9gg4/yPK0+VO7JYB//9k="
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoMAAkAA4BaJbAC7AEVI+qTk4AA/DAbSnGBKXDdYowMo7WFyZfVdCLbFkboUehgex3BL7YKqWxqbmfKJgAAAA=="
   },
   "rajgundha-trail": {
-    "src": "/img/rajgundha-trail.jpg",
+    "src": "/img/rajgundha-trail.webp",
     "width": 768,
     "height": 1024,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAQAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQME/8QAHxABAAEEAQUAAAAAAAAAAAAAAQIAAxEhEgQTUVKh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIS/9oADAMBAAIRAxEAPwAu6dTfCcps19ndQe+OOP2k4TG1namhazzzyUlEz4KnuhuEf//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoMABAAA4BaJZACdAD0rupAb/AA/r6OHvOmj33p8dkou+9aYTTKxR4xu7ixkCdm6cShSAP0dWHlqGIAQN0krcSo2CAAAA=="
   },
   "rajgundha-valley": {
-    "src": "/img/rajgundha-valley.jpg",
+    "src": "/img/rajgundha-valley.webp",
     "width": 1024,
     "height": 576,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAHAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAHRAAAgEEAwAAAAAAAAAAAAAAAAECAwURIiFRYf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQIA/9oADAMBAAIRAxEAPwDLjcEltWqN9Pkkri86zkvAALrQwb//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoMAAcAA4BaJQBOjXAAW8LZI5ZAAP6jd2C4U2DtW3Rqni1G/JSksZM0ZkhOcfw5kEu+MdKqRuoAAA=="
   },
   "September_in_the_hills_is_lush_green_(16285394362).jpg": {
-    "src": "/img/september-in-the-hills-is-lush-green-16285394362.jpg",
+    "src": "/img/september-in-the-hills-is-lush-green-16285394362.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgED/8QAIhAAAQIEBwEAAAAAAAAAAAAAAQACAwQSMQURFCEyYYHB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgT/xAAYEQACAwAAAAAAAAAAAAAAAAAAAQIRE//aAAwDAQACEQMRAD8AEJ85SM5+O5wsa/iuuxYEgvY7shu6yhcfUzdSbSQLP//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoMAAkAA4BaJbACdAEOZ10oAP5KKXpBxakRau7oxl8eZMDYgtAewvY3j034KQjrIlQwGBkPWZQiUCgAAAA="
   },
   "Sunset_gliding_in_Bir,_Himachal_Pradesh.jpg": {
-    "src": "/img/sunset-gliding-in-bir-himachal-pradesh.jpg",
+    "src": "/img/sunset-gliding-in-bir-himachal-pradesh.webp",
     "width": 2000,
     "height": 3000,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAASAAwDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAYBA//EAB8QAAICAgEFAAAAAAAAAAAAAAABAhEDBTEEIjJBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAIR/9oADAMBAAIRAxEAPwCj6eOKNXR0yPE5eiQht8kYrv5EtzO/Jk+0pyU/b+mNu+WAIJ//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoMABIAPu1iqU2ppaOiMAgBMB2JYgCdACHfrE7fL8wgAP7IxUNnrty2S6yRK/qMaMsiDC1+AE6DKy8iZI+rqdth3QdstnU4AAA="
   },
   "Sunset_in_Bir,_Himachal_Pradesh.jpg": {
-    "src": "/img/sunset-in-bir-himachal-pradesh.jpg",
+    "src": "/img/sunset-in-bir-himachal-pradesh.webp",
     "width": 2000,
     "height": 2815,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAARAAwDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAIBAAAgEDBAMAAAAAAAAAAAAAAQIABRExAwQSIVGRsf/EABUBAQEAAAAAAAAAAAAAAAAAAAME/8QAGREAAwADAAAAAAAAAAAAAAAAAAERAhMh/9oADAMBAAIRAxEAPwCi7csMH1FPp8WtaYVrTBQCT1ixI+Rb1VnYsWz4EBLO9KXrhy5EIRSY/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABwAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JQBadA9DqRPkJXYAA/R0g1Bltb07zWqmaNnQ9frr3I63EM70GhsBZbdrECXDgQB3UAA=="
   },
   "Sunset_India_village.jpg": {
-    "src": "/img/sunset-india-village.jpg",
+    "src": "/img/sunset-india-village.webp",
     "width": 1908,
     "height": 4032,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAZAAwDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAABAUGAAH/xAAiEAACAgEEAQUAAAAAAAAAAAABAgADEQQFEiFBBhMiMZL/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQEBAQEBAAAAAAAAAAAAAAABABICEf/aAAwDAQACEQMRAD8AnFvrz7ee8/cxrJPQgi6e02BAh5+F8ynq260VqHpbljv4mRbRz7I03XWJcbVsXmTnJQGGp6o3ZBgagfgRLOxkmm//2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAADQAwCdASoMABkAPu1krU6ppaSiMAgBMB2JQBgbhDiRypV9SVMWm4AA/uWRpJoHZN+hRy6vMXjG6OR6238shZa12s1DV+2Z8srUjl9/+6p7uNqf1p1kCxVYUgYA6zKCb5IUoJwBsloAAA=="
   },
   "Tea_garden_at_Nagri_in_the_Kangra_Valley_of_Himachal_Pradesh,_India.jpg": {
-    "src": "/img/tea-garden-at-nagri-in-the-kangra-valley-of-himachal-pradesh-india.jpg",
+    "src": "/img/tea-garden-at-nagri-in-the-kangra-valley-of-himachal-pradesh-india.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAED/8QAHRAAAgICAwEAAAAAAAAAAAAAAQIAAwQFESExUf/EABUBAQEAAAAAAAAAAAAAAAAAAAAE/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAITUf/aAAwDAQACEQMRAD8Atm7yrxxYtXnoUiYpsslFCh16+rESS2ej/9k="
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAABwAQCdASoMAAgAA4BaJbAAAlJPiAD+4AvgFtL8FzDYFYa1lMNY/lShgWyDT4DM/1yZ0oZNRCfrKLwA"
   },
   "Uhl_above_Barot_towards_Billing_Oct_2017_D72_2280_01.jpg": {
-    "src": "/img/uhl-above-barot-towards-billing-oct-2017-d72-2280-01.jpg",
+    "src": "/img/uhl-above-barot-towards-billing-oct-2017-d72-2280-01.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAP/xAAcEAABBQADAAAAAAAAAAAAAAABAAIDESEEBYH/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//EABcRAAMBAAAAAAAAAAAAAAAAAAABAlH/2gAMAwEAAhEDEQA/AEHYTSHSXOGUdV3cua8fQ8CIpVdaKSP/2Q=="
+    "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoMAAgAA4BaJZgCdADzxqmGIAD8j839e6clajCmhSPB5HnzzuCPoO3WQb8ZGsa2eD/YiAAA"
   },
   "Uhl_River_at_Barot_Oct_2017_D72_2280.jpg": {
-    "src": "/img/uhl-river-at-barot-oct-2017-d72-2280.jpg",
+    "src": "/img/uhl-river-at-barot-oct-2017-d72-2280.webp",
     "width": 2000,
     "height": 1333,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQF/8QAHRAAAgIBBQAAAAAAAAAAAAAAAQIAAxIRIjFBUf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/AMtEtwwruJB1LKODJjVaGbd37ESQf//Z"
+    "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoMAAgAA4BaJZQAAu0T2gO3gAD+6iyCJYq/BzA3lZa4mQxTbKdlVEcFBHFttZOcDhuAAA=="
   },
   "View_of_Barot_valley_01.jpg": {
-    "src": "/img/view-of-barot-valley-01.jpg",
+    "src": "/img/view-of-barot-valley-01.webp",
     "width": 2000,
     "height": 1500,
-    "blurDataURL": "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAJAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAP/xAAfEAACAgEEAwAAAAAAAAAAAAABBAACMQMFESESMnL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8AunujFa86jPZx0TBtubiyxa4c8RgCg4EFo4H1GX9pOXR//9k="
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoMAAkAA4BaJYgAAvdX1yAAAP39Pn7aDh5U3vjDQ0+EgWSOGhC+NOc2OMXSPYl19ctnoXdxORNHQAPF50LAAA=="
   }
 }

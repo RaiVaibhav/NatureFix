@@ -221,4 +221,47 @@ export const images = {
     'Tea_garden_at_Nagri_in_the_Kangra_Valley_of_Himachal_Pradesh,_India.jpg',
     'Tea garden, Nagri — Kangra valley, Wikimedia Commons',
   ),
+
+  // ——— team ———
+  ishaniProfile: ext(
+    'ishani-profile',
+    'https://images.squarespace-cdn.com/content/v1/5af48f780dbda3e2c3d65074/02bc605b-f767-48d5-ad6e-98804a896794/Screenshot+2026-08-08+at+5.19.32%E2%80%AFPM.png?format=500w',
+    'Ishani Sawant'
+  ),
+  badgeWfa: {
+    src: '/img/badge-wfa.png',
+    credit: 'WFA Certification'
+  },
+  badgeWafa: {
+    src: '/img/badge-wafa.png',
+    credit: 'WAFA Certification'
+  },
+  badgeWfr: {
+    src: '/img/badge-wfr.png',
+    credit: 'WFR Certification'
+  },
+  badgeWemt: {
+    src: '/img/badge-wemt.png',
+    credit: 'WEMT Certification'
+  },
+  vaibhavProfile: {
+    src: '/img/vaibhav-profile.jpg',
+    credit: 'Vaibhav Profile'
+  },
+  rajgundhaSunsetBir: {
+    src: '/img/rajgundha-sunset-bir.jpg',
+    credit: 'Bir Sunset'
+  },
+  rajgundhaViewNew: {
+    src: '/img/rajgundha-view.jpg',
+    credit: 'Rajgundha Valley View'
+  },
+  rajgundhaTentsNew: {
+    src: '/img/rajgundha-tents-new.jpg',
+    credit: 'Camp at Rajgundha'
+  },
+  rajgundhaMeditation: {
+    src: '/img/rajgundha-meditation.jpg',
+    credit: 'Morning Meditation'
+  },
 }

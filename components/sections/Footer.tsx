@@ -31,8 +31,10 @@ export function Footer() {
               <b className="mb-1 text-xs font-semibold uppercase tracking-[0.12em] text-bg/55">
                 Say hello
               </b>
-              <a href="https://www.instagram.com/adventureishani/" rel="noopener" className="text-sm text-bg/85 hover:text-ember-bright">
-                Instagram — @adventureishani
+              <a href="mailto:naturefix.co@gmail.com">Email us</a>
+
+              <a href="https://www.instagram.com/naturefix.co/" rel="noopener" className="text-sm text-bg/85 hover:text-ember-bright">
+                Instagram — @naturefix.co
               </a>
               <a
                 href="https://wa.me/917780935412"

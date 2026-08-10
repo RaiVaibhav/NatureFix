@@ -10,6 +10,7 @@ type PhotoFrameProps = {
   credit?: string
   alt: string
   className?: string
+  imageClassName?: string
   rotate?: number
   wash?: 'full' | 'light' | 'none'
   /** Override when a frame is known to be much narrower or wider than the default. */
@@ -29,6 +30,7 @@ export function PhotoFrame({
   src,
   alt,
   className,
+  imageClassName,
   rotate = 0,
   wash = 'full',
   // frames sit in one- or two-column layouts, so half the viewport above the lg
@@ -61,7 +63,7 @@ export function PhotoFrame({
           unoptimized={!src.startsWith('/')}
           {...(blurDataURL ? { placeholder: 'blur' as const, blurDataURL } : {})}
           onError={() => setFailed(true)}
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          className={cn("object-cover transition-transform duration-700 ease-out group-hover:scale-105", imageClassName)}
         />
       )}
       {!failed && wash !== 'none' && (

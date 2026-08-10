@@ -68,7 +68,7 @@ export const experiences: Experience[] = [
     name: 'The Rajgundha Reset',
     promise: 'Leave lighter than you arrived.',
     duration: 'Fri–Sun',
-    season: 'Oct 10-12',
+    season: 'Oct 9–11 & Oct 23–25',
     heroImage: images.uhlTowardsBilling,
     heroAlt: 'The Uhl valley behind Billing, on the way to Rajgundha',
     intro:
@@ -96,10 +96,10 @@ export const experiences: Experience[] = [
         title: 'Let the noise drop',
         hook: 'A mindful walk past a monastery, to a sunset worth standing still for.',
         summary:
-          "Arrive, exhale. A ninety-minute welcome circle over chai, then a mindful walk straight out from where you're staying — quiet trails, past a monastery, to a sunset worth standing still for. Dinner together at one long table, and a bonfire if the group's still up for it. Nobody's herded on their first evening.",
+          "Arrive, exhale. A ninety-minute welcome circle over chai, then a mindful walk straight out from where you're staying — quiet trails, past a monastery, to a sunset worth standing still for. Dinner together at one long table, and a bonfire.",
         frames: [
-          frame(images.teaGarden, 'Kangra tea gardens at golden hour'),
-          frame(images.birSunsetGliders, 'The last wings against an orange sky over Bir'),
+          frame(images.rajgundhaSunsetBir, 'Sunset over the Kangra valley from Bir'),
+          frame(images.teaGarden, 'Dhauladhar view from kangra valley'),
           frame(images.choklingApproach, 'The monastery the evening walk passes through'),
           frame(images.fireCircle, 'A first-night bonfire, for anyone still up'),
         ],
@@ -108,14 +108,16 @@ export const experiences: Experience[] = [
         day: 'Saturday',
         location: 'Bir → Billing → Chaina Pass (~2,900 m) → Rajgundha (~2,500 m)',
         title: 'Where the road ends, the valley begins',
-        hook: 'An afternoon of deliberate nothing, and a river to walk down to.',
+        hook: 'An afternoon of stillness, and a river to hike down to.',
         summary:
-          "Out of Bir after a proper breakfast — no dawn starts here. We climb up through Billing and stop at **Chaina Pass** for tea, with the whole Dhauladhar spread out in front of you. Then we drop into Rajgundha, where the road gives up and the valley takes over. Settle in, eat lunch together around midday, and let the afternoon be exactly as empty as you'd like it — nap in the sun, wander the lanes, or simply sit and look. We walk down to the **Uhl** at half past two, because the light goes early up here. Evening tea, and then the fire — the heart of the whole weekend, a circle where your hosts always speak first.",
+          "Out of Bir after a proper breakfast, no dawn starts here. We drive through Billing and stop at **Chaina Pass** for tea, with the whole Dhauladhar spread out in front of you. Then we drop into Rajgundha, where the road gives up and the valley takes over. Settle in, an afternoon of stillness, and let the afternoon be exactly as empty as you'd like it. Then we hike down to the river **Uhl** at half past three. Evening tea, the fire, a night ending with sky full of stars and the heart of the whole weekend.",
         frames: [
-          frame(images.rajgundhaValley, 'The valley opening up at Rajgundha'),
-          frame(images.rajgundhaCamp, 'Camp pitched on the meadow at Rajgundha'),
+          frame(images.rajgundhaViewNew, 'The mountain view at Rajgundha'),
+          frame(images.rajgundhaValley, 'The mountain view of rajgundha valley'),
           frame(images.rajgundhaRiverCrossing, 'The bridge over the Uhl, on the walk down to the river'),
-          frame(images.rajgundhaSunset, 'Evening light coming off the ridges'),
+          frame(images.rajgundhaTentsNew, 'Yellow tents pitched at the camp'),
+
+
         ],
       },
       {
@@ -124,10 +126,10 @@ export const experiences: Experience[] = [
         title: 'The last quiet, then the pass',
         hook: 'Meditation and yoga, a gradual climb to the pass, then the choice to fly home over everything you walked.',
         summary:
-          'The last day opens at eight with meditation and yoga — no dawn alarm, nobody hurried out of this valley. Breakfast, then the walk up to **Chaina Pass**: a steady, gradual climb, paced kindly. Tea at the top and a long sit in front of the high Himalayas, and the vehicle meets us right there for the ride down to Billing. A simple lunch at the launch, then the way home is yours: fly, walk the Billing–Bir trail, or ride down with us. One final tea together closes the weekend.',
+          'The last day opens at eight with meditation and yoga, nobody hurried out of this valley. Breakfast, then the walk up to **Chaina Pass**: a steady, gradual climb, paced kindly. Tea at the top and a long sit in front of the high Himalayas, and the vehicle meets us right there for the ride down to Billing. A simple lunch at the launch, then the way home is yours: fly. One final tea together closes the weekend.',
         frames: [
-          frame(images.rajgundhaPass, 'The shrine at Chaina Pass, the valley falling away behind'),
-          frame(images.rajgundhaFlags, 'Prayer flags on the ridge above the valley'),
+          frame(images.rajgundhaMeditation, 'Morning meditation looking down the valley'),
+          frame(images.birSunsetGliders, 'The last wings against an orange sky over Bir'),
           frame(images.billingLaunch, 'Billing, where the ways home split'),
           frame(images.heroFly, 'Flying home over the valley you walked through'),
         ],
@@ -143,19 +145,18 @@ export const experiences: Experience[] = [
       { title: 'Paragliding home over the very valley you walked through, if you choose it', icon: 'flight' },
     ],
     whatsHandled: [
-      '2 nights’ stay: Bir (optional Friday) + Rajgundha camp (Saturday)',
+      '2 nights’ stay: Bir + Rajgundha camp (Saturday)',
       'All ground transport from Bir onward',
       'Every meal, Friday dinner to Sunday goodbye tea',
       'Hosted walks, the sharing circle, morning meditation',
-      'Tandem paragliding for those who opt in — no extra charge from us',
-      'Your trip photos, shared as a digital album within the week',
+      'Tandem paragliding for those who opt in, no extra charge from us',
     ],
     honesty: [
-      'Food up high is simple, not fancy — dal-rice, parathas, Maggi, honest mountain food.',
-      'Meals are handled, but carry your own snacks and dry fruits for Saturday’s walk down to the river.',
-      "Paragliding is your choice at booking, at no extra charge. Weather has the final word — if flying isn't possible, everyone comes down together by trail or vehicle.",
-      "The cold is the real discomfort risk, not the walking — the kit list is firm for a reason.",
-      'Network is decent in Bir, weak at Billing, basically none in Rajgundha — your family’s emergency-contact line is set up before we lose signal.',
+      'Food up high is simple, not fancy: dal-rice, parathas, Maggi, honest mountain food.',
+      'Meals are handled, but carry your own snacks and dry fruits for Saturday’s hike down to the river and sunday hike up to China pass',
+      "Paragliding is your choice at booking, at no extra charge. Weather has the final word, if flying isn't possible, everyone comes down together by trail or vehicle.",
+      "The cold is the real discomfort risk, not the walking, the kit list is firm for a reason.",
+      'Network is decent in Bir, weak at Billing, basically none in Rajgundha, your family’s emergency contact line is set up before we lose signal.',
       'No alcohol on the trail or at the Saturday fire.',
     ],
   },
@@ -207,7 +208,7 @@ export const experiences: Experience[] = [
         title: 'Climbing like birds',
         hook: 'An old shepherd route on foot, then an hour riding the thermals the vultures use.',
         summary:
-          "We leave in the morning and walk the upper Billing trail through oak and rhododendron — an old shepherd route, paced kindly, every step up is height you'll spend in the air. We reach the launch by early afternoon, eat, and that's when things start: ground school first — wind cycles, thermals, why the birds circle where they circle. Then UNDERSTANDING THE SKY — up to an hour with a certified tandem pilot, **climbing like birds**, riding ridge lift along the Dhauladhar's shoulder. A quiet sunset, then the flight debrief around the fire.",
+          "We leave in the morning and walk the upper Billing trail through oak and rhododendron — an old shepherd route, paced kindly, every step up is height you'll spend in the air. We reach the launch by early afternoon, eat, and that's when things start: ground school first — wind cycles, thermals, why the birds circle where they circle. Then UNDERSTANDING THE SKY — up to an hour with an experienced tandem pilot, **climbing like birds**, riding ridge lift along the Dhauladhar's shoulder. A quiet sunset, then the flight debrief around the fire.",
         frames: [
           frame(images.birGaggle, 'Wings circling together in a thermal above Bir'),
           frame(images.birForest, 'The forested trail climbing out of Bir toward Billing'),

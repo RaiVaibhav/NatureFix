@@ -39,19 +39,10 @@ export function Community() {
           ))}
         </div>
 
-        <Reveal delay={0.2} className="mt-10">
-          <PhotoFrame
-            src={images.community.src}
-            credit={images.community.credit}
-            alt="Group gathered as the valley catches the last light"
-            className="aspect-[21/9] w-full"
-            wash="light"
-          />
-        </Reveal>
 
         <Reveal delay={0.28} className="mt-9">
           <Button asChild variant="ember">
-            <a href="#contact">Come to the next one</a>
+            <a href="/experiences/rajgundha-reset">Come to the next one</a>
           </Button>
         </Reveal>
       </div>

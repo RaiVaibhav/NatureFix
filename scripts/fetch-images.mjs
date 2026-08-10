@@ -93,7 +93,7 @@ async function main() {
   let skipped = 0
 
   for (const { key, url } of files) {
-    const name = `${slugify(key)}.jpg`
+    const name = `${slugify(key)}.webp`
     const dest = path.join(OUT_DIR, name)
 
     if (!FORCE && manifest[key] && (await exists(dest))) {
@@ -114,21 +114,21 @@ async function main() {
       })
       const { width, height } = await pipeline
         .clone()
-        .jpeg({ quality: QUALITY, progressive: true, mozjpeg: true })
+        .webp({ quality: QUALITY })
         .toFile(dest)
 
       // 12px wide blur, inlined as a data URI — enough to suggest the photograph's
       // colour and composition while the real file streams in.
       const blur = await sharp(raw)
         .resize({ width: 12 })
-        .jpeg({ quality: 40 })
+        .webp({ quality: 40 })
         .toBuffer()
 
       manifest[key] = {
         src: `/img/${name}`,
         width,
         height,
-        blurDataURL: `data:image/jpeg;base64,${blur.toString('base64')}`,
+        blurDataURL: `data:image/webp;base64,${blur.toString('base64')}`,
       }
       fetched++
       console.log(`${width}×${height}`)
