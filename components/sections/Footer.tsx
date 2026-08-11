@@ -37,7 +37,7 @@ export function Footer() {
                 Instagram — @naturefix.co
               </a>
               <a
-                href="https://wa.me/917780935412"
+                href="https://wa.me/917018333288"
                 rel="noopener"
                 className="inline-flex items-center gap-1.5 text-sm text-bg/85 hover:text-ember-bright"
               >

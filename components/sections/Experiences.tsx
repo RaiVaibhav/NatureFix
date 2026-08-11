@@ -26,40 +26,40 @@ export function Experiences() {
           {experiences.map((e, i) => {
             const isComingSoon = e.isComingSoon;
             return (
-            <Reveal key={e.slug} delay={i * 0.08}>
-              <Link
-                href={isComingSoon ? '#' : `/experiences/${e.slug}`}
-                className={`group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${isComingSoon ? 'opacity-70 pointer-events-none' : ''}`}
-                aria-disabled={isComingSoon}
-                tabIndex={isComingSoon ? -1 : 0}
-              >
-                <Card className={`h-full transition-all duration-300 ${isComingSoon ? '' : 'group-hover:-translate-y-1 group-hover:border-ember group-hover:shadow-xl group-hover:shadow-ember/10 border-accent'}`}>
-                  <div className="relative">
-                    <PhotoFrame
-                      src={e.heroImage.src}
-                      credit={e.heroImage.credit}
-                      alt={e.heroAlt}
-                      className="aspect-[16/10] w-full rounded-none border-0 border-b border-line"
-                      wash="light"
-                    />
-                    <span className="absolute left-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-bg/30 bg-accent-deep/45 text-ember-bright backdrop-blur-sm">
-                      <Mountain size={16} />
-                    </span>
-                  </div>
-                  <div className="flex flex-1 flex-col gap-3 p-6">
-                    <h3 className="font-display text-xl font-medium text-ink">{e.name}</h3>
-                    <p className="flex-1 text-sm leading-relaxed text-ink-soft">{e.promise}</p>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge className={!isComingSoon ? 'bg-accent text-bg border-accent hover:bg-accent' : ''}>{isComingSoon ? 'Coming soon' : e.season}</Badge>
-                      <Badge variant="season">{e.duration}</Badge>
+              <Reveal key={e.slug} delay={i * 0.08}>
+                <Link
+                  href={isComingSoon ? '#' : `/experiences/${e.slug}`}
+                  className={`group block h-full rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${isComingSoon ? 'opacity-70 pointer-events-none' : ''}`}
+                  aria-disabled={isComingSoon}
+                  tabIndex={isComingSoon ? -1 : 0}
+                >
+                  <Card className={`h-full transition-all duration-300 ${isComingSoon ? '' : 'group-hover:-translate-y-1 group-hover:border-ember group-hover:shadow-xl group-hover:shadow-ember/10 border-accent'}`}>
+                    <div className="relative">
+                      <PhotoFrame
+                        src={e.heroImage.src}
+                        credit={e.heroImage.credit}
+                        alt={e.heroAlt}
+                        className="aspect-[16/10] w-full rounded-none border-0 border-b border-line"
+                        wash="light"
+                      />
+                      <span className="absolute left-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-bg/30 bg-accent-deep/45 text-ember-bright backdrop-blur-sm">
+                        <Mountain size={16} />
+                      </span>
                     </div>
-                    <span className={`mt-1 inline-flex items-center gap-1.5 text-sm font-semibold transition-all ${isComingSoon ? 'text-ink-soft' : 'text-accent group-hover:gap-2.5 group-hover:text-ember-deep'}`}>
-                      {isComingSoon ? 'Coming soon' : 'Explore'} {isComingSoon ? null : <ArrowRight size={15} />}
-                    </span>
-                  </div>
-                </Card>
-              </Link>
-            </Reveal>
+                    <div className="flex flex-1 flex-col gap-3 p-6">
+                      <h3 className="font-display text-xl font-medium text-ink">{e.name}</h3>
+                      <p className="flex-1 text-sm leading-relaxed text-ink-soft">{e.promise}</p>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge className={!isComingSoon ? 'bg-accent text-bg border-accent hover:bg-accent' : ''}>{isComingSoon ? 'Coming soon' : e.season}</Badge>
+                        <Badge variant="season">{e.duration}</Badge>
+                      </div>
+                      <span className={`mt-1 inline-flex items-center gap-1.5 text-sm font-semibold transition-all ${isComingSoon ? 'text-ink-soft' : 'text-accent group-hover:gap-2.5 group-hover:text-ember-deep'}`}>
+                        {isComingSoon ? 'Coming soon' : 'Explore'} {isComingSoon ? null : <ArrowRight size={15} />}
+                      </span>
+                    </div>
+                  </Card>
+                </Link>
+              </Reveal>
             )
           })}
 
@@ -71,7 +71,7 @@ export function Experiences() {
               </p>
               <Button asChild variant="ember">
                 <a
-                  href={`https://wa.me/917780935412?text=${encodeURIComponent(
+                  href={`https://wa.me/917018333288?text=${encodeURIComponent(
                     'Hi! Let me know when The Full Circle / The Thamsar Push opens up.',
                   )}`}
                   rel="noopener"

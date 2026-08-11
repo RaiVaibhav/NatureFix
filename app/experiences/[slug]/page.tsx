@@ -134,7 +134,7 @@ export default async function ExperiencePage({
               <p className="text-sm text-ink-soft">
                 This is the arc, not the hour-by-hour.{' '}
                 <a
-                  href={`https://wa.me/917780935412?text=${encodeURIComponent(
+                  href={`https://wa.me/917018333288?text=${encodeURIComponent(
                     `Hi! Can you share the full schedule for ${experience.name}?`,
                   )}`}
                   rel="noopener"
@@ -214,7 +214,7 @@ export default async function ExperiencePage({
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Button asChild size="lg" variant="ember">
                 <a
-                  href={`https://wa.me/917780935412?text=${encodeURIComponent(
+                  href={`https://wa.me/917018333288?text=${encodeURIComponent(
                     `Hi! Can I get the pricing and a full itinerary for ${experience.name}?`,
                   )}`}
                   rel="noopener"
