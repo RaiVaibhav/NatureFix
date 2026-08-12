@@ -268,4 +268,8 @@ export const images = {
     src: '/img/camp-kasba.jpg',
     credit: 'Camp beside stream'
   },
+  rajgundhaSlowHike: {
+    src: '/img/rajgundha-slow-hike-2.jpg',
+    credit: 'A slow hike through the valley'
+  },
 }

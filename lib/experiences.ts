@@ -114,7 +114,7 @@ export const experiences: Experience[] = [
           "Out of Bir after a proper breakfast, no dawn starts here. We drive through Billing and stop at **Chaina Pass** for tea, with the whole Dhauladhar spread out in front of you. Then we drop into Rajgundha, where the road gives up and the valley takes over. Settle in, an afternoon of stillness, and let the afternoon be exactly as empty as you'd like it. Then we hike down to the river **Uhl** at half past three. Evening tea, the fire, a night ending with sky full of stars and the heart of the whole weekend.",
         frames: [
           frame(images.rajgundhaViewNew, 'The mountain view at Rajgundha'),
-          frame(images.rajgundhaValley, 'The mountain view of rajgundha valley'),
+          frame(images.fireCircle, 'A first-night bonfire, for anyone still up'),
           frame(images.rajgundhaRiverCrossing, 'The bridge over the Uhl, on the walk down to the river'),
           frame(images.rajgundhaTentsNew, 'Yellow tents pitched at the camp'),
 
@@ -132,7 +132,7 @@ export const experiences: Experience[] = [
           frame(images.rajgundhaMeditation, 'Morning meditation looking down the valley'),
           frame(images.birSunsetGliders, 'The last wings against an orange sky over Bir'),
           frame(images.billingLaunch, 'Billing, where the ways home split'),
-          frame(images.heroFly, 'Flying home over the valley you walked through'),
+          frame(images.rajgundhaSlowHike, 'A slow-paced walk through the valley'),
         ],
       },
     ],
