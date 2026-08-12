@@ -52,6 +52,8 @@ export type Experience = {
   heroImage: { src: string; credit: string }
   heroAlt: string
   intro: string
+  /** One line naming who hosts this and why that's worth something. Sits under the intro. */
+  hostNote?: string
   facts: { groupSize: string; fitness: string; season: string; whoItsFor: string }
   forYouIf: string[]
   notForYouIf: string[]
@@ -60,6 +62,12 @@ export type Experience = {
   whatsHandled: string[]
   honesty: string[]
   isComingSoon?: boolean
+  /**
+   * A working draft. The page builds and is reachable by direct URL, but it is kept out of
+   * every listing (home, /experiences, cross-sell), out of the sitemap, and marked noindex —
+   * so a rework can be looked at in full without being sold yet.
+   */
+  isUnlisted?: boolean
 }
 
 export const experiences: Experience[] = [
@@ -161,6 +169,116 @@ export const experiences: Experience[] = [
       'No alcohol on the trail or at the Saturday fire.',
     ],
   },
+  // ——— WORKING DRAFT, not listed anywhere ———
+  // The Rajgundha Reset rebuilt around outdoor education, per
+  // plans/rajgundha-reset-outdoor-education-rework.md. Same three days, same vehicles,
+  // same camp — the only additions are three facilitated sessions (the Solo, Ishani's
+  // Leave No Trace session, the Gaddi shepherd evening) and a reflection arc that runs
+  // through all of them. Kept unlisted so it can be read whole before it's sold.
+  {
+    slug: 'rajgundha-reset-v2',
+    name: 'The Rajgundha Reset v2',
+    promise: 'Learn how to be outside. Leave lighter than you arrived.',
+    duration: 'Fri–Sun',
+    season: 'Oct 9–11 & Oct 23–25',
+    isUnlisted: true,
+    heroImage: images.uhlTowardsBilling,
+    heroAlt: 'The Uhl valley behind Billing, on the way to Rajgundha',
+    intro:
+      'Three slow days in the Himalayas. A night in Bir, a night camping in a valley the road barely reaches, and a fire under a sky with nothing else in it. What makes it different is that you are actually taught something along the way. A proper session on how to be outdoors without damaging it, from someone qualified to train instructors. An easy hike down to the Uhl and a quiet hour by the water. An evening with a Gaddi shepherd who reads this weather without any forecast, because his family always has. And on the last day, a slow climb out of the valley and the choice to fly home over everything you walked. You will come home able to say what you learned, not just where you went.',
+    hostNote:
+      'Hosted by Ishani Sawant — NOLS field instructor, Colorado Outward Bound mountaineering instructor, Leave No Trace Master Trainer, and the first Indian certified by the American Mountain Guides Association.',
+    facts: {
+      groupSize: '8–12 — small on purpose',
+      fitness: 'Easy. Sunday’s slow climb up to Chaina Pass is the only real effort, and a vehicle goes the same way if you’d rather ride.',
+      season: 'October–November and March–May. We don’t run this in monsoon.',
+      whoItsFor: 'Anyone who needs to breathe.  Adults who want to learn about mountain, nothing here needs experience, only warm socks.',
+    },
+    forYouIf: [
+      'You want to come home with something you can do, not just somewhere you have been',
+      'An unhurried hour by a river with no phone sounds like the point, not a waste of a day',
+      'Learning with curiosity — from a trained guide and from a shepherd — sounds like two halves of one subject',
+      'Stillness makes more sense to you around a fire than on a cushion in a hall',
+    ],
+    notForYouIf: [
+      'You want a weekend with nothing planned — this one has structure, and that is the whole idea',
+      'You need a hot shower every day — the camp night has none, and it’s worth it',
+      'You’d rather not be asked a question in front of other people',
+    ],
+    arc: [
+      {
+        day: 'Friday',
+        location: 'Bir (~1,400 m)',
+        title: 'Arrive, slow down, settle in',
+        hook: 'A monastery walk, a session led by instructor Ishani on Leave no trace, a lazy afternoon, sunset, dinner at Emaho, and a fire to end on.',
+        summary:
+          "Exhale, arrive by nine, or whenever possible. Breakfast, chai, and a welcome circle. An easy walk to the monastery, then lunch. In the afternoon, **an hour with Ishani on Leave No Trace, how to be outdoors without wrecking it** and after that the day is yours. In the evening, a walk to a sunset spot we love, then we'll follow village paths down into the main market. It has a completely different energy at night, buzzing with lights and local life. Then a cozy Tibetan dinner at Cafe Emaho **one long table, because that's exactly how friends eat** and a bonfire back at the stay.",
+        frames: [
+          frame(images.rajgundhaSunsetBir, 'Sunset over the Kangra valley from Bir'),
+          frame(images.birManiStones, 'Mani stones — leave what you find, taught on something real'),
+          frame(images.choklingApproach, 'The monastery the evening walk passes through'),
+          frame(images.campKasba, 'The camp beside the stream, where Friday ends'),
+        ],
+      },
+      {
+        day: 'Saturday',
+        location: 'Bir → Billing → Chaina Pass (~2,900 m) → Rajgundha (~2,500 m)',
+        title: 'Into the valley',
+        hook: 'Tea on Chaina Pass, a tent where the road ends, an easy hike down to the Uhl, and an evening with a Gaddi shepherd by the fire.',
+        summary:
+          "Breakfast, then we drive. A pause at Billing to watch the color paragliders taking off, tea at **Chaina Pass** with the Dhauladhar in front of us, and a bit of the valley explained on the way down. Then reach to camp, find some sun, enjoy a warm lunch. In the afternoon, **an easy hike down to the Uhl river**, cold water, warm rocks, and then time by the water on your own — **no phone, no book, nothing to do**, and one line before you go: just notice what's around you. We talk about it on the walk back up. Evening tea as the valley goes quiet. Then, if he's around, **a Gaddi shepherd spends the evening with us**, with Ishani sitting alongside him, ask him whatever you're curious about. Dinner from a wood-fired kitchen, and a fire under a sky full of stars.",
+        frames: [
+          frame(images.rajgundhaViewNew, 'The valley where the road gives out'),
+          frame(images.shepherds, 'Gaddi shepherds on the ridge — the Saturday evening'),
+          frame(images.rajgundhaRiverCrossing, 'The bridge over the Uhl, on the walk down to the river'),
+          frame(images.fireCircle, 'The fire that closes the day'),
+        ],
+      },
+      {
+        day: 'Sunday',
+        location: 'Rajgundha → Chaina Pass (~2,900 m) → Billing (~2,430 m) → Bir',
+        title: 'The climb out, then the sky',
+        hook: 'Yoga in the valley, a slow climb to the pass, and the choice to fly home over all of it.',
+        summary:
+          "The last morning starts at eight with meditation and yoga. Over breakfast we look at the sky together and settle how the day will go. Then we walk out of the valley, a slow, steady climb up to **Chaina Pass** on the same trail the shepherds use, with a vehicle along for anyone who'd rather ride. Tea at the top and a long sit in front of the high mountains, and before we head down, everyone writes one thing they're taking home. The vehicle drops us at Billing for lunch. From there you either **paraglide down to Bir, over the valley you just walked**, or drive down. One last tea together in Bir, then goodbyes.",
+        frames: [
+          frame(images.rajgundhaMeditation, 'Morning meditation looking down the valley'),
+          frame(images.birSunsetGliders, 'The last wings against an orange sky over Bir'),
+
+          frame(images.rajgundhaPass, 'The shrine at the pass, where the closing circle happens'),
+          frame(images.rajgundhaSlowHike, 'A slow-paced walk out of the valley'),
+        ],
+      },
+    ],
+    signatureMoments: [
+      { title: 'A real session on how to be outdoors without damaging it — learned before you need it', icon: 'kit' },
+      { title: 'A mindful walk to sunset on the first evening, past a monastery on the way', icon: 'sunset' },
+      { title: 'Learning to read the valley on the way in — trees, water, weather, birds', icon: 'birds' },
+      { title: 'The easy hike down to the Uhl river — cold water, warm rocks, no rush', icon: 'waterfall' },
+      { title: 'Time alone by the river — no phone, no book, nothing to do but notice', icon: 'meditation' },
+      { title: 'An evening with a Gaddi shepherd, when he’s around — ask him anything', icon: 'circle' },
+      { title: 'The Saturday fire under a sky full of stars — nothing planned, just a good night', icon: 'fire' },
+      { title: 'Meditation and yoga to open the last morning — no dawn alarm', icon: 'yoga' },
+      { title: 'The walk up to Chaina Pass — tea, silence, the high Himalayas in front of you', icon: 'hike' },
+      { title: 'Paragliding home over the very valley you walked through, if you choose it', icon: 'flight' },
+    ],
+    whatsHandled: [
+      '2 nights’ stay — Bir on Friday, the Rajgundha camp on Saturday',
+      'All travel from Bir onward, including the ride down from Chaina Pass',
+      'Every meal, Friday dinner to Sunday goodbye tea',
+      'The sessions, the circles and the take-home card, run by Ishani',
+      'The evening with the shepherd, whenever he’s around',
+      'Tandem paragliding on Sunday for anyone who wants it — no extra charge from us',
+      'The walks, morning meditation and yoga',
+    ],
+    honesty: [
+      'Sunday’s flight is the pilots’ call — wind decides, never the schedule. If flying isn’t safe, it doesn’t happen, and everyone comes down by vehicle together.',
+      'Food up there is simple, not fancy: dal-rice, parathas, Maggi. Bring your own snacks for the walk to the river and the climb to the pass.',
+      'The cold will bother you more than the walking. That’s why the kit list isn’t flexible.',
+      'Phone signal is fine in Bir, patchy at Billing, basically nothing in Rajgundha. We set up an emergency number for your family before we lose it.',
+    ],
+  },
+
   {
     slug: 'understanding-the-sky',
     name: 'Understanding the Sky',
@@ -450,7 +568,11 @@ export const experiences: Experience[] = [
     ],
   },
 
+
 ]
+
+/** Everything the public sees. Drafts (`isUnlisted`) are reachable by URL only. */
+export const listedExperiences = experiences.filter((e) => !e.isUnlisted)
 
 export function getExperience(slug: string) {
   return experiences.find((e) => e.slug === slug)

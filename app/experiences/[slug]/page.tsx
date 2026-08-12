@@ -12,7 +12,7 @@ import { ScrollProgress } from '@/components/ScrollProgress'
 import { MountainDivider } from '@/components/MountainDivider'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
 import { Button } from '@/components/ui/button'
-import { experiences, getExperience } from '@/lib/experiences'
+import { experiences, listedExperiences, getExperience } from '@/lib/experiences'
 import { touristTripSchema } from '@/lib/schema'
 
 export async function generateStaticParams() {
@@ -32,6 +32,8 @@ export async function generateMetadata({
     title: experience.name,
     description: experience.promise,
     alternates: { canonical: `/experiences/${experience.slug}` },
+    // drafts are reachable by URL but must never be indexed or previewed in a share card
+    ...(experience.isUnlisted ? { robots: { index: false, follow: false } } : {}),
     openGraph: {
       title,
       description: experience.promise,
@@ -54,7 +56,7 @@ export default async function ExperiencePage({
   const experience = getExperience(slug)
   if (!experience) notFound()
 
-  const others = experiences.filter((e) => e.slug !== experience.slug)
+  const others = listedExperiences.filter((e) => e.slug !== experience.slug)
 
   return (
     <>
@@ -64,6 +66,11 @@ export default async function ExperiencePage({
       />
       <Nav />
       <ScrollProgress />
+      {experience.isUnlisted && (
+        <p className="bg-ember px-6 py-2 text-center text-xs font-semibold uppercase tracking-[0.12em] text-bg">
+          Working draft — not listed anywhere, not indexed. Reachable by this link only.
+        </p>
+      )}
       <main className="flex-1">
         {/* Hero — pulled out into a Client Component to allow direct motion animations
             that match the feel of the main site homepage */}
@@ -74,6 +81,11 @@ export default async function ExperiencePage({
           <div className="relative mx-auto grid max-w-6xl gap-12 px-6 md:grid-cols-[1.4fr_1fr]">
             <Reveal>
               <p className="max-w-2xl text-lg leading-relaxed text-ink">{experience.intro}</p>
+              {experience.hostNote && (
+                <p className="mt-6 max-w-2xl border-l-2 border-ember pl-4 text-sm leading-relaxed text-ink-soft">
+                  {experience.hostNote}
+                </p>
+              )}
             </Reveal>
             <Reveal delay={0.1} className="grid content-start gap-5 rounded-2xl border border-line bg-bg-raised p-6">
               <Fact label="Group size" value={experience.facts.groupSize} />

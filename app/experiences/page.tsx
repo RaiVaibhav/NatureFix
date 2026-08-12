@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { PhotoFrame } from '@/components/PhotoFrame'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
-import { experiences } from '@/lib/experiences'
+import { listedExperiences } from '@/lib/experiences'
 
 const description = 'Four weekends, one promise each — mountain weekends starting in Bir, Himachal Pradesh.'
 
@@ -46,7 +46,7 @@ export default function ExperiencesIndex() {
           </p>
 
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
-            {experiences.map((e) => (
+            {listedExperiences.map((e) => (
               <Card key={e.slug} className="h-full">
                 <PhotoFrame
                   src={e.heroImage.src}

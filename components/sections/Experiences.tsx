@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { PhotoFrame } from '@/components/PhotoFrame'
 import { Reveal } from '@/components/Reveal'
 import { WhatsAppIcon } from '@/components/WhatsAppIcon'
-import { experiences } from '@/lib/experiences'
+import { listedExperiences } from '@/lib/experiences'
 
 export function Experiences() {
   return (
@@ -23,7 +23,7 @@ export function Experiences() {
         </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-2">
-          {experiences.map((e, i) => {
+          {listedExperiences.map((e, i) => {
             const isComingSoon = e.isComingSoon;
             return (
               <Reveal key={e.slug} delay={i * 0.08}>
