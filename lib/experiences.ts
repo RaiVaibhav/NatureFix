@@ -178,7 +178,7 @@ export const experiences: Experience[] = [
   {
     slug: 'rajgundha-reset-v2',
     name: 'The Rajgundha Reset v2',
-    promise: 'Learn to notice. Leave lighter than you arrived.',
+    promise: 'Leave lighter than you arrived. Learn to notice.',
     duration: 'Fri–Sun',
     season: 'Oct 9–11 & Oct 23–25',
     isUnlisted: true,
