@@ -72,12 +72,12 @@ export const experiences: Experience[] = [
     heroImage: images.uhlTowardsBilling,
     heroAlt: 'The Uhl valley behind Billing, on the way to Rajgundha',
     intro:
-      'Two days in the Himalayas. A night of camping in a quiet valley the road barely reaches. Mornings that begin with mindfulness instead of notifications. And to finish — Himalayan paragliding over the very valley you walked through, if you choose it. Not a trekking package, not a paragliding package — a reset.',
+      'Three days in the Himalayas. A night of camping in a quiet valley the road barely reaches. Mornings that begin with mindfulness instead of notifications. And to finish, Himalayan paragliding over the very valley you walked through, if you choose it. Not a trekking package, not a paragliding package, a reset.',
     facts: {
-      groupSize: '8–12 — small on purpose',
-      fitness: 'Genuinely easy. Sunday’s gradual walk up to Chaina Pass is the one real stretch, and the vehicle goes the same way for anyone who’d rather ride.',
+      groupSize: '8–12, small on purpose',
+      fitness: 'Genuinely easy. Sunday’s gradual hike up to Chaina Pass is the one real stretch, and the vehicle goes the same way for anyone who’d rather ride.',
       season: 'October–November and March–May. We don’t run this in monsoon.',
-      whoItsFor: 'Anyone who needs to breathe. First-timers especially welcome — nothing here needs experience, only warm socks.',
+      whoItsFor: 'Anyone who needs to breathe. First-timers especially welcome, nothing here needs experience, only warm socks.',
     },
     forYouIf: [
       'Stillness makes more sense to you around a fire than on a cushion in a hall',
