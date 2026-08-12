@@ -85,37 +85,37 @@ function JourneyWaypoint({ day, index }: { day: ArcDay; index: number }) {
  */
 const MOSAIC: Record<number, { base: string[]; flip: string[] }> = {
   1: {
-    base: ['col-start-1 col-span-3 row-start-1 row-span-3'],
-    flip: ['col-start-1 col-span-3 row-start-1 row-span-3'],
+    base: ['col-start-1 col-span-3 row-start-1 row-span-5'],
+    flip: ['col-start-1 col-span-3 row-start-1 row-span-5'],
   },
   2: {
-    base: ['col-start-1 col-span-2 row-start-1 row-span-3', 'col-start-3 row-start-1 row-span-3'],
-    flip: ['col-start-2 col-span-2 row-start-1 row-span-3', 'col-start-1 row-start-1 row-span-3'],
+    base: ['col-start-1 col-span-2 row-start-1 row-span-5', 'col-start-3 row-start-1 row-span-5'],
+    flip: ['col-start-2 col-span-2 row-start-1 row-span-5', 'col-start-1 row-start-1 row-span-5'],
   },
   3: {
     base: [
-      'col-start-1 col-span-2 row-start-1 row-span-3',
-      'col-start-3 row-start-1 row-span-2',
-      'col-start-3 row-start-3',
+      'col-start-1 col-span-2 row-start-1 row-span-5',
+      'col-start-3 row-start-1 row-span-3',
+      'col-start-3 row-start-4 row-span-2',
     ],
     flip: [
-      'col-start-2 col-span-2 row-start-1 row-span-3',
-      'col-start-1 row-start-1 row-span-2',
-      'col-start-1 row-start-3',
+      'col-start-2 col-span-2 row-start-1 row-span-5',
+      'col-start-1 row-start-1 row-span-3',
+      'col-start-1 row-start-4 row-span-2',
     ],
   },
   4: {
     base: [
-      'col-start-1 col-span-2 row-start-1 row-span-2',
-      'col-start-3 row-start-1 row-span-2',
-      'col-start-1 row-start-3',
-      'col-start-2 col-span-2 row-start-3',
+      'col-start-1 col-span-2 row-start-1 row-span-3',
+      'col-start-3 row-start-1 row-span-3',
+      'col-start-1 row-start-4 row-span-2',
+      'col-start-2 col-span-2 row-start-4 row-span-2',
     ],
     flip: [
-      'col-start-2 col-span-2 row-start-1 row-span-2',
-      'col-start-1 row-start-1 row-span-2',
-      'col-start-3 row-start-3',
-      'col-start-1 col-span-2 row-start-3',
+      'col-start-2 col-span-2 row-start-1 row-span-3',
+      'col-start-1 row-start-1 row-span-3',
+      'col-start-3 row-start-4 row-span-2',
+      'col-start-1 col-span-2 row-start-4 row-span-2',
     ],
   },
 }
@@ -131,7 +131,7 @@ function DayMosaic({ frames, flip }: { frames: ArcFrame[]; flip: boolean }) {
       whileInView={{ opacity: 1, scale: 1, rotate: tilt }}
       viewport={{ once: true, margin: '-100px' }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="grid aspect-[4/3] w-full grid-cols-3 grid-rows-3 gap-2 sm:gap-2.5"
+      className="grid aspect-[4/3] w-full grid-cols-3 grid-rows-5 gap-2 sm:gap-2.5"
     >
       {shown.map((f, i) => (
         <motion.div

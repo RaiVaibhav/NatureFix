@@ -72,7 +72,7 @@ export const experiences: Experience[] = [
     heroImage: images.uhlTowardsBilling,
     heroAlt: 'The Uhl valley behind Billing, on the way to Rajgundha',
     intro:
-      'Three days in the Himalayas. A night of camping in a quiet valley the road barely reaches. Mornings that begin with mindfulness instead of notifications. And to finish, Himalayan paragliding over the very valley you walked through, if you choose it. Not a trekking package, not a paragliding package, a reset.',
+      'Camping in tents, paragliding, hiking, and campfire. Three days in the Himalayas. A night of camping in a quiet valley the road barely reaches. Mornings that begin with mindfulness instead of notifications. And to finish, Himalayan paragliding over the very valley you walked through, if you choose it. Not a trekking package, not a paragliding package, a reset.',
     facts: {
       groupSize: '8–12, small on purpose',
       fitness: 'Genuinely easy. Sunday’s gradual hike up to Chaina Pass is the one real stretch, and the vehicle goes the same way for anyone who’d rather ride.',
@@ -101,7 +101,8 @@ export const experiences: Experience[] = [
           frame(images.rajgundhaSunsetBir, 'Sunset over the Kangra valley from Bir'),
           frame(images.teaGarden, 'Dhauladhar view from kangra valley'),
           frame(images.choklingApproach, 'The monastery the evening walk passes through'),
-          frame(images.fireCircle, 'A first-night bonfire, for anyone still up'),
+          frame(images.campKasba, 'camp beside stream, the place of stay'),
+
         ],
       },
       {

@@ -264,4 +264,8 @@ export const images = {
     src: '/img/rajgundha-meditation.jpg',
     credit: 'Morning Meditation'
   },
+  campKasba: {
+    src: '/img/camp-kasba.jpg',
+    credit: 'Camp beside stream'
+  },
 }
